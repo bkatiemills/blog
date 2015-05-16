@@ -1,8 +1,8 @@
 title: Long Haul
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-url: http://billmills.github.io/blog/
-baseurl: ""
+url: x
+baseurl: "http://billmills.github.io/blog"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
