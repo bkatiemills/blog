@@ -15,8 +15,8 @@ navigation:
    url: /index.html
  #- title: About
  #  url: /about
- - title: Twitter
-   url: https://twitter.com/billdoesphysics
+ #- title: Twitter
+ #  url: https://twitter.com/billdoesphysics
 
 social:
    github: BillMills
