@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Codefest"
+date:   2014-09-07
+---
+
+*This post adpated from the original on the Mozilla Science Lab's blog.*
+
+## Beating the Fear
+
+When we weren't heads down and hacking, I got to hear people's stories about their adventures and ideas in open science, and some really interesting patterns began to appear.
+
+The first thing a group of us managed to collaboratively hack together was a dinner plan for the night before. On the walk back, [Naupaka Zimmerman][naupaka] brought up a key problem that new researchers face; to paraphrase: "There are so many technology choices out there that sound the same to beginners - Zshell, Cshell, OMGshell - not to mention all the options they might not have noticed - how can they feel like they are making informed decisions?" The initial bewilderment this describes is a thread we as a community should tug on. My instincts say that worrying about technology choices and the nebulous concept of 'best', especially for beginners, is a trap of infinite anxiety; the focus needs to be on goals, and whatever tool lands your particular plane is *good enough for now*. Making mistakes and iterating next time is better than okay - it's how 'best' happens. But it's easy for me to say that, and Naupaka's point is crucial; how can we make a really warm and practical welcome to people jumping in for the first time?
+
+Much to my delight, Stephanie Hampton convened a [project][project] at Codefest to write a paper, intended for traditional journal publication, on how people can spool up from zero on open science. Tons of great ideas got exchanged in the session, but one thing that stood out to me after reviewing the notes was that the hurdles discussed were largely not technical - they were psychological. As a broad community, scientists coming to open practices are often fearful of getting scooped, or as the draft points out, afraid of being wrong in public. I have seen this over and over when I introduce researchers to open source version control, for example; there is always a lot of anxiety over putting 'bad' code up on GitHub, and a lot of time gets sunk into cleanup beforehand. Meanwhile, the majority of the code I put up on GitHub is terrible - [truly hilariously bad][bad] in some cases - but I maintain this doesn't matter; it's all part of the process. GitHub isn't my publication journal; it's my lab book. But again - it's easy for an open source stalwart to have that internalized; it's a whole different story for people new to the process, and their worries are very real. Helping resolve the anxieties that Naupaka, Stephanie et al so astutely described should be a key point of study for our community, beyond the merely technical.
+What Discoverability Problem?
+
+I think one of the biggest home runs we get out of an event like Codefest or the [MSL Sprint][sprint] is a critical mass of interaction. By putting all that knowledge together with low barriers to exchange, the discoverability problem that is one of open science's biggest bugbears is completely blown away. I saw this over and over at Codefest this week; from advising Lauren Hallett and Andy Lyons on [contributing][contribs] to a parser for extracting seed data from [Kew Gardens][kew], to hovering around the edges of Ben Best's conversation on GIS in R and Python to sitting with [Ralph and Matthew][ralph] at the Sprint to imagine [Trillian][trillian], the sheer volume of 'hey have you heard of X' creates a shared pool of knowledge that leaves bad discoverability no where to hide.  And when a collection of appealing tools are on the table, the next thing to get crushed is bad interoperability; if an opportunity appears to solve a major problem with a tool that already exists and is available for free, the incentive to make everything play nice together is huge.
+
+So how can we copy/paste this critical mass of interaction?  Stack Overflow has done it for mainstream software development.  Can we build a similar distributed community for the sciences? I think so - that's the community I've been talking about building lately, and that's the prize on the horizon; the end of the discoverability problem, natural pressure towards interoperability, and a clearer onramp for new participants.  As always, we hope you'll join us to make it so.
+
+When the event was wrapping up, an excellent point was made about what NCEAS was trying to do with their first ever Codefest: NCEAS hosted an unconference lead by participants because no institute or working group can or should hand down a formulation of open science to the world at large; like all cultures, research has to be lead by you the community; and if we want to build something for researchers, then it has to be built by researchers. The Mozilla Science Lab couldn't agree more; we're looking forward to many more events that do just that.
+
+[naupaka]: https://twitter.com/naupakaz
+[project]: https://github.com/NCEAS/open-science-codefest/issues/60
+[bad]: https://www.youtube.com/watch?v=hIs1fWumaXU&t=10m03s
+[sprint]: http://wp.mozillascience.org/the-mozsprint-heard-round-the-world/
+[contribs]: https://github.com/ajlyons/sidtraits
+[kew]: http://www.kew.org/
+[ralph]: http://wp.mozillascience.org/hooks-developer-engagement-at-mozsprint/
+[trillian]: http://trillianverse.org/
