@@ -1,0 +1,85 @@
+---
+layout: post
+title:  "Ask Us Anything: Lessons from the Local Research Coding Groups Panel Discussion"
+date:   2015-03-26
+---
+
+*This post originally appeared on the Mozilla Science Lab's blog.*
+
+On Tuesday, the the Science Lab conducted <a href="http://forum.mozillascience.org/t/research-coding-q-a-march-24-2015-3-pm-pdt/214">its first Ask Us Anything on the MSL Forum</a>, organized by <a href="https://twitter.com/noamross">Noam Ross</a>. The topic was lessons learned in running local study groups, user's groups, hacky hours and other meetups for researchers using and writing code; many thanks go out to the seven panelists who were available to answer questions:
+
+<ul>
+    <li><a href="https://twitter.com/raynamharris">Rayna Harris</a>, <a href="http://ccbb.biosci.utexas.edu/">Center for Computational Biology and Bioinformatics</a>, UT Austin</li>
+    <li><a href="https://twitter.com/jhollist">Jeff Hollister</a>, US EPA</li>
+    <li><a href="https://twitter.com/Isa_Kiko">Isabell Kiko</a>, <a href="http://melbourne.resbaz.edu.au/">Research Bazaar</a></li>
+    <li><a href="https://twitter.com/FCTweedie">Fiona Tweedie</a>, <a href="http://melbourne.resbaz.edu.au/">Research Bazaar</a></li>
+    <li><a href="https://twitter.com/ErikaMudrak">Erika Mudrak</a>, <a href="http://www.cscu.cornell.edu/">Cornell Statistical Consulting Unit</a></li>
+    <li><a href="https://twitter.com/noamross">Noam Ross</a>, <a href="http://www.noamross.net/davis-r-users-group.html">Davis R Users' Group</a>, UC Davis</li>
+    <li><a href="https://twitter.com/jiffyclub">Matt Davis</a>, <a href="http://software-carpentry.org/">Software Carpentry</a></li>
+</ul>
+
+This was a tremendously successful event, with a sustained conversation of more than a post per minute on the topic for two full hours; a lot of interesting ideas came out of the discussion, a few of which I summarize here, followed by detailed discussion below; also, be sure to check out <a href="http://forum.mozillascience.org/t/research-coding-q-a-march-24-2015-3-pm-pdt/214">the full thread</a>.
+
+<h2>Summary</h2>
+
+A few great ideas for study groups can be distilled from this event:
+
+<ul>
+    <li>Get your event information in front of a few hundred people regularly; 10% attendance is normal.</li>
+    <li>Involve your institution in communicating about your event if possible.</li>
+    <li>Always have an exit strategy: how will you pass the baton to the next cohort of organizers?</li>
+</ul>
+
+And for online AMA-style events:
+
+<ul>
+    <li>Make it a panel discussion; this creates the space for the community to ask questions, but keeps the thread lively and substantial with discussions between experienced community members.</li>
+    <li>Make it a time-limited event; this encourages active participation and re-creates some of the energy usually found only at conferences and in-person meetups.</li>
+</ul>
+
+<h2>Sticking Power</h2>
+
+One of the first things the thread discussed, was one of the most common problems for any regular community event: sustainability. How do we get people coming out and participating, month after month, and maintain momentum?
+
+The panel quickly zeroed in on an interesting challenge: will interest be inspired and sustained by highly targeted skills and tools trainings, or will keeping things as general as possible appeal to a wide audience? Highly specific material will be the most attractive to the small group of people already interested in it, while general topics might seem vague or unclear to a potential attendee on how relevant they'll be, even if they, in principle, apply to a wider range of people.
+
+This led to an important observation: the bigger the pool of people a study group is communicating with, the better its attendance will be. Panelists seemed to have a bit more success with the specific and clearly practically applicable; what allowed these groups to keep attendance up despite getting into the nitty gritty, was developing a large audience of people aware of their activities. Numbers seemed to hover around 10% attendance, if we compare number of actual attendees to size of mailing lists; but with a large audience (critical mass seemed to be around 200 people), there's sure to be a cohort of people interested in whichever specific topic the group wants to take up.
+
+But what about the early days, before a new group has gotten in front of that first 200? Fiona and Jeff made a key observation: stick to it, even if the first couple of events are just you and one or two other people. It takes time for word of mouth to spread, time for people to make up their minds that they're comfortable dipping their toe into something like a meetup group - and, worst case, you've set aside some time to get some of your own work done and have a beer.
+
+Finally on the topic of sustainability, another common concern that came up was the relationship of organizers to the host institution; post-docs and students move on after only a few short years, and without someone to pick up the torch, efforts can fizzle out. The panel agreed that it's crucial for senior organizers to cultivate relationships with people who they can hand off to in future, but this calls out another key design question: how can we design a really smooth hand-off procedure between generations of organizers? This is a long term goal a bit beyond the concerns of groups just getting started, but I think with some savvy design, this process can be made quite smooth; more of my own ideas on this will be forthcoming on this blog very soon.
+
+<h2>Communication</h2>
+
+We need that pool of 200 people thinking about our event - how do we assemble them to begin with?
+
+Organizers found, perhaps surprisingly, that their attendees were pretty quiet on Twitter, and didn't generate much conversation there, although Twitter might be more effective as a 'push' platform, to let people know about events and content. More successful were blogs and mailing lists; panelists cited the familiarity of these formats to most researchers.
+
+A novel approach that a few of the groups based at universities took, was to approach departments for inclusion in departmental news letters and welcome packages for new students. Not only do these communication channels typically already exist in most institutions, they can put a group in front of a large number of potentially interested people quickly, and lend a degree of inclusion into the establishment that helps catch peoples' attention.
+
+<h2>Novel Ideas</h2>
+
+One thing I love about getting a bunch of people together to talk, is that novel ideas always come out. One of my favorites was a whole other flavor of event that a study group could put on; Fiona Tweedie described 'Research Speed Dating', an event where a bunch of people set up short demos of tools they use in their research, and attendees circulate among them, exploring the tools in short, five-minute introductions to see if they might be interested in looking deeper into them at a future meetup. Topics that garner a lot of interest are chosen for deeper dives at future events, and prospective participants get to meet organizers and start developing connections in a relatively no-pressure atmosphere.
+
+Another observation I found compelling from the discussion came from Rayna Harris - graduate school often involves working on the same project for years, and the singular focus can be maddening after a while. It's really refreshing to have a project that comes in little, month-long bites; from announcing a meetup to delivering can easily occupy only a few weeks, giving a sense of delivery and completion on a much faster cadence than research naturally provides.
+
+<h2>Meta-AMA</h2>
+
+A number of people also asked me about the AMA format itself; I think it was a big success, and it was largely thanks to some design decisions Noam Ross made when we were setting this event up:
+
+<ul>
+    <li>Have a panel of people to discuss the topic at hand. This worked very well, since even when there weren't newcomers to ask questions, the panelists all talked amongst themselves, which led to some really deep and insightful questions and answers from old hands in the space. We had a seven-person panel, and everyone participated and seemed heard.</li>
+    <li>Put it all on one thread. I admit, I had some misgivings about having seven parallel conversations in one thread. It was about as chaotic as I imagined, but Noam was right, it was actually a good thing; it enhanced the panel's ability to interact and make this as much a panel discussion as an AMA - call it an open panel discussion.</li>
+</ul>
+
+A remarkable thing about this event, was that the same sort of skill and knowledge sharing that happens so naturally at a conference and that I've been trying to produce online came out in this event; by sitting a half dozen people down around a topic in a finite time window (we did two hours and it didn't drag at all), the same sort of connections and mutual understanding came out.
+
+<h2>Conclusion</h2>
+
+A number of interesting ideas, metrics and goals for study groups came out of this conversation, which we'll be folding in to our forthcoming support for setting up your own meetup - watch this space for news and opportunities in that project coming very soon, and in the meantime, make sure your local study group is on the map!
+
+<h3>Map of Study Groups &amp; Hacky Hours</h3>
+
+<script src="https://embed.github.com/view/geojson/mozillascience/studyGroupLessons/master/whereWeAre.geojson"></script>
+
+Given what a great time and what a productive discussion everyone had on the forum on Tuesday, I'm looking forward to making these panel AMAs a regular event at the Lab; if you have a topic you'd like to suggest, post it in the <a href="http://forum.mozillascience.org/category/events">Events section of the forum</a>, or tweet it to us at <a href="https://twitter.com/MozillaScience/">@MozillaScience</a> and <a href="https://twitter.com/billdoesphysics">@billdoesphysics</a>. I hope you'll join us!
