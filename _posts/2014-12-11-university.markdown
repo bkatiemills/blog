@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Open Science Goes to University"
-date:   2015-12-11
+date:   2014-12-11
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*
