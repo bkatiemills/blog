@@ -4,6 +4,8 @@ title:  "Hooks: Developer Engagement at #mozsprint"
 date:   2014-07-30
 ---
 
+*This post originally appeared on the Mozilla Science Lab's blog.*
+
 The Mozilla Science Sprint was a great opportunity to chat and hack on a bright constellation of open science. But it was also a chance to jumpstart some of Interdisciplinary Programming’s projects, and reconnoiter the real challenges that endeavor will face.
 
 Trillian, AutoQC and BigVASP were three projects well suited to our first developer sortie, relevant to published data, and apt for three different engagement strategies, from bite-sized issues to open-ended engineering.
