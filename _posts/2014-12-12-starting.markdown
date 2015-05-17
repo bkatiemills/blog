@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "Starting Instruction: Feedback from the New Instructor Community"
+date:   2014-12-12
+---
+
+*This post originally appeared on the Mozilla Science Lab's blog.*
+
+For the past few months, I've been chewing on what needs to happen to support new instructors as they get ready to start teaching their first few workshops - how can we make the experience painless, clear and enjoyable, and what can we do to build familiarity and skill in our instructors so they feel confident when they walk into the classroom? I made <a title="instructorTraining" href="https://github.com/swcarpentry/instructor-training/pull/1" target="_blank">some contributions</a> to Software Carpentry's Instructor Training curriculum after co-teaching that workshop several times, and ran a series of <a title="instructorHangouts" href="http://wp.mozillascience.org/instructor-hangouts-landing-this-friday/" target="_blank">Instructor Hangouts</a> to give people a place to come and share stories, review each other's teaching, and meet the community in pursuit of this - but we still needed a clearer picture of how to help.
+
+Most recently, over the past couple of weeks I reached out to a number of instructors to ask them how things were going - where are the pain points and bottlenecks in getting going on teaching workshops, and what needs to happen in order to make a new instructor's first few adventures successful. What emerged was surprisingly coherent, and can serve as a road map for advancing the instructor training process. I've summarized this feedback in a set of recommendations from the community, below:
+
+<h2>Community Recommendations</h2>
+
+<ul>
+    <li><strong>Make it easier to find workshops to teach</strong>. Currently, having to dig through emails, etherpads or other lists to find a suitable workshop to participate in is a proactive task instructors need to regularly do - a system that automatically notifies instructors of workshops that meet their criteria would remove some of the busywork of participation.</li>
+    <li><strong>Clarify the process of setting up a workshop</strong>. For a new instructor, there are a number of details about setting up a workshop that aren't clear, particularly around timing. When should the website be live? When should meetings with fellow instructors be held, and on what topics? A buddy system, like the mentorship model already discussed, is in order.</li>
+    <li><strong>Create a Frequently Encountered Problems resource</strong>. Problems and solutions in executing on a workshop are perennially discussed on mailing lists and in blog posts - but there is no usable aggregate of this collective wisdom. A centralized resource that describes problems people have had and how they recovered would be more usable.</li>
+    <li><strong>Structure the mentor / new instructor experience</strong>. The core idea of pairing a new instructor with a more experienced one is certainly solid, but more utility might be found by giving those senior instructors some guidance on how to mentor a new instructor, particularly in the workshop prep stage, to scaffold some useful feedback on lesson plans, and support the planning process for the new instructor.</li>
+    <li> <strong>Clarify strategy on how to balance lecture time and exercises</strong>. Instructor training heavily emphasizes hands on exercises and formative problems for students, but it's not always clear how to balance class time. Can we give some guidance on this?</li>
+    <li><strong>Clarify content knowledge expectations</strong>. Many instructors are not necessarily comfortable with every topic covered in a workshop, to a level where they feel they can teach it. The fact that this is OK needs to be clarified, and opportunities to upskill if desired should be pointed out.</li>
+</ul>
+
+<h2>Conclusions</h2>
+
+From these conversations, a common theme emerged of needing better pavement on the road between instructor training and that first workshop. At high level, I recommend the creation of two new resources (in addition to those requested by the community above):
+
+<ul>
+    <li><strong>A New Instructor Welcome Package</strong>, which consists of a short, easy-to-parse document describing exactly all the steps needed to go from finishing Instructor Training to getting in front of that first class, including schedules for meetings, things to do to prepare, website setup instructions and profuse thank-yous. This package should be emailed directly to new instructors (not just sitting on a server somewhere), and should have a designer go over it once to make sure it feels approachable and welcoming.</li>
+    <li><strong>A Mentor's Guide</strong>, outlining strategies for coaching a new instructor on getting ready for and surviving their first workshop. This would include checklists of things to look for and discuss before and during the workshop, and some feedback checklists to help structure this coaching process.</li>
+</ul>
+
+I discussed all kinds of experiences and ideas with Software Carpentry's instructor community in this round of feedback, but when I asked where the pain points were, the words were different but the tone was always the same: friction is coming from uncertainty. No one really knows what a workshop is going to be like until they teach it, but I hope that by systematizing the leadup and providing better supports there, we can dispel some confusion and make this process much more welcoming.
+
+<strong>In order to get the ball rolling on this project, let's brainstorm!</strong> I've started etherpads for rough points on the content for the <a title="welcomePackage" href="https://etherpad.mozilla.org/newInstructorWelcomePackage" target="_blank">Welcome Package</a> and the <a title="mentorsGuide" href="https://etherpad.mozilla.org/SWCmentorsGuide" target="_blank">Mentor's Guide</a> - please, jump in and add your thoughts! I hope you'll join us.
