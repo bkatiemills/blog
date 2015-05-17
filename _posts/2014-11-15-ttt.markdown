@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Train the Trainers: Next Iterations"
+date:   2014-11-15
+---
+
+*This post originally appeared on the Mozilla Science Lab's blog.*
+
+The fourth live Software Carpentry Instructor Training just wrapped at the University of Washington, as hosted by <a title="benMarwick" href="https://twitter.com/benmarwick" target="_blank">Ben Marwick</a> and the <a title="escience" href="http://escience.washington.edu/" target="_blank">eScience Institute</a> - many thanks to our hosts, to my co-instructors <a title="gregWilson" href="https://twitter.com/gvwilson" target="_blank">Greg Wilson</a>, <a title="tracyTeal" href="https://twitter.com/tracykteal" target="_blank">Tracy Teal</a> and <a title="warrenCode" href="https://twitter.com/warcode" target="_blank">Warren Code</a>, and to our students for making this another great workshop! As I have repeated many times, I always learn the most from my students, and this time was no exception.
+
+I think this workshop is getting better every time we run it. Greg and I have iterated on the strategy and structure of Instructor Training over the past few months, from the University of Virginia to The Genome Analysis Centre in Norwich, England to here in Seattle, and I'm liking where it's going. The content is getting clearer, the lessons and themes are reinforcing each other and the challenges are consistently adding value. You can see my personal take on this material in <a title="instructorTraining" href="http://mozillascience.github.io/instructorTraining/" target="_blank">our repo</a> - this is still a work in progress, but a full version will be complete before <a title="resbazConf" href="http://resbaz.tumblr.com/conference" target="_blank">ResBaz's event in February</a>.
+
+There's one thing that keeps coming up in our student feedback that I want to address, and that I'd like other SWC instructors' thoughts on. From concept maps through memory, to expertise, reverse instructional design and peer instruction, we've got the theory down - but students consistently request more practical experience with the material, and more insight into what it's actually like to teach Software Carpentry. Ultimately, no one can be told what a workshop is like - they have to see it for themselves. But maybe we can get a bit closer than we currently are.
+
+Consider the following exercise that Warren and I cooked up after this workshop: require instructor trainees to familiarize themselves with the lesson content of one of the major topics we cover, before Instructor Training begins: Git, Python, R, SQL or bash. Then, after they've had some of the theory lessons and smaller teaching and feedback exercises, have them spend a good chunk of time working in pairs to plan out their strategy for a whole unit - from concept map to lesson flow to a formative multiple choice question or two. Then, pair the pairs up and have each member of the group of four take turns to teach each other a 10(ish) minute piece of each of their lessons, much like the existing teaching &amp; feedback exercises.
+
+There are several wins built into this strategy:
+<ul>
+    <li>Students will leave the workshop with their teaching strategy for at least one unit well planned out, making the work necessary to teach their first workshop lighter and less daunting.</li>
+    <li>Students get to spend a bunch of time thoroughly familiarizing themselves with at least one of the cardinal topics in SWC.</li>
+    <li>Students get to put all the techniques we teach together and try them out in a classroom setting.</li>
+    <li>Students get to see how their partner thinks through the details of the lesson planning process, and how they interpret &amp; deliver the lesson they wrote together.</li>
+</ul>
+I think this plan dramatically turns up the practical experience and insight into Software Carpentry in Instructor Training, per students' requests, and gives them a big head start on content and lesson planning in preparation for their first workshop by sending them home with a first cut at prepping their first workshop. We're thinking about 90 minutes on lesson planning, plus another 90 on teaching presentations and feedback, for a three-hour unit; to make the time for this compared to the UW schedule, we could cut the hour-long exercise on model learners that got tepid reviews, the hour on introduction strategy that came up as a tangent, and the discussion of building out post assessment instruments (a crucial project, but not necessary in Instructor Training); students reported wanting more focus, so these tangents, while interesting, can be brought back in to reinforcing the core experience.
+
+What does the Software Carpentry family think? Any suggestions or tweaks? Or, any totally different ideas for concrete prep for new instructors? What do you wish someone had just told you before you taught a workshop for the very first time? Let me know in the comments or on <a title="forum" href="http://forum.mozillascience.org/t/train-the-trainers-next-iterations/166" target="_blank">the forum</a>!
