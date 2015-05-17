@@ -13,15 +13,14 @@ paginate: 5
 navigation:
  - title: Home
    url: /index.html
- - title: About
-   url: /about
- - title: Contact
-   url: /contact
+ #- title: About
+ #  url: /about
+ - title: Twitter
+   url: https://twitter.com/billdoesphysics
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: BillMills
+   twitter: billdoesphysics
+   email: mills.wj@gmail.com
 
 google_analytics: "UA-58263416-1"
