@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Instructor Training at the Research Bazaar"
-date:   2014-02-20
+date:   2015-02-20
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog, With contributions from Damien Irving and Kaitlin Thaney.*
