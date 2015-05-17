@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "Hooks: Developer Engagement at #mozsprint"
+date:   2014-07-30
+---
+
+The Mozilla Science Sprint was a great opportunity to chat and hack on a bright constellation of open science. But it was also a chance to jumpstart some of Interdisciplinary Programming’s projects, and reconnoiter the real challenges that endeavor will face.
+
+Trillian, AutoQC and BigVASP were three projects well suited to our first developer sortie, relevant to published data, and apt for three different engagement strategies, from bite-sized issues to open-ended engineering.
+
+Published data must answer a crucial question: how can we trust data from arbitrary sources? Confining ourselves to known sources precludes crowdsourced data; we need an infrastructure of sniff tests. As luck would have it, Simon Good from the Met Office and the International Quality Controlled Ocean Dataset (IQuOD) submitted a proposal with similar concerns.
+
+IQuOD seeks to test historical oceanographic data to validate consistency and integrity. Currently, oceanography testing infrastructure is highly fragmented; IQuOD wants to unite these tests, and study which subset produces the highest quality validation. The project is called AutoQC (<a title="AutoQC" href="https://github.com/IQuOD/AutoQC">https://github.com/IQuOD/AutoQC</a>), the science team preferred Python, and I recommended starting with plain old unittest.
+
+One question I'm exploring, is how to define problems to best attract useful contributions - should issues be spelled out as an evening's enterprise, or will open-ended engagement be more compelling? AutoQC lent itself to small problems; I began by specifying a simple test suite that required no scientific domain knowledge, but which was isomorphic to the testing we wanted, and could be implemented by an experienced pythonista in minutes.
+
+By the time the sprint wrapped, AutoQC was the only one of my projects with concrete pull requests. Working with a capable volunteer, we set up a test suite that ran over arbitrary data via ddt (<a href="https://github.com/txels/ddt">https://github.com/txels/ddt</a>). We still need to return fine-grained results for analyses, but this was the most concrete progress logged.
+
+Score one for clear issues - but, as always, there's always another way.
+
+Trillian (<a href="http://trillianverse.org/">http://trillianverse.org/</a> from Demitri Muna at Ohio State University) attacks another edge of published data: what is 'open data' that's too big to move? Fields producing image data, like astronomy (the originating domain of Trillian) or medical imaging generate enormous datasets; petabyte scale science shouldn’t be excluded from meaningfully accessible data, and we can’t scale past the problem, either; physics can fill hard drives with exoplanets and exotic matter faster than you can say 'RAID 0'.
+
+CERN conducted a successful exercise in distributed analysis at the LHC, so proof of principle is already there. But Trillian has a more nimble vision than the CERN computing juggernaut. What if, instead of huge computing centers, anyone with spare computing resources could integrate them into a distributed analysis grid? In this way, we could build a grid that scales naturally, and fits our budgets better than commercial solutions; many grants can be spent on hardware, or personnel - but data services budgets are much harder to come by, regardless of price. Trillian’s bright vision is participatory grid computing in real funding conditions; but as the Sprint approached, that's unfortunately all it was - vision.
+
+The need was too great to chicken out. I set Trillian up as a sprint activity with nothing concrete in hand, and let fly - and I’m glad we did.
+
+I said going in that blue sky projects benefit more from wise guidance than lines of code, and that's exactly what we got. Matthew Smillie from Joyent dropped in to relate lessons learned from manta (<a href="https://www.joyent.com/products/manta">https://www.joyent.com/products/manta</a>), a product overlapping Trillian in engineering. The discussion he had with Ralph Giles from Mozilla and Eric Huff from the Trillian team was sheer magic - the strategy around Linux containers they produced in an hour was a huge leap in clarity. And all without a shred of concrete roadmap to start with.
+
+Perhaps it was obvious. Developers are creative - oftentimes, getting to attack an interesting problem is more engaging than the trazillionth ticket. It's becoming clear that part of the gap between coders and researchers is engineering leadership - there is a disconnect between the growing ecology of computing resources and the scientific community, and help with engineering strategy is often badly needed. Access to expertise is a crucial foundation that events like the Sprint can provide, and facilitating discussion and creativity is one of the best outcomes available. There’s still plenty to debate on Trillian, and more to implement - please, join the conversation at <a href="https://github.com/trillian/trillian/issues">https://github.com/trillian/trillian/issues</a>.
+
+Finally, BigVASP, a data aggregation tool for material science simulation proposed by Jun Yan &amp; Paweł Zawadzki from the Colorado School of Mines. Academic material science finds itself with lots of simulation results from VASP (<a href="http://www.vasp.at/">http://www.vasp.at/</a>), fragmented across the community despite their manageable size. While it’s possible to imagine many fantastic data publishing schemes, we need a lowest-barrier option. Many would benefit from published data, but lack both cohesion to maintain distributed databases, and budget to outsource; a lightweight tool could allow individual groups to aggregate data unilaterally. This sort of low-overhead distribution was part of BigVASP's plan, and since they asked for Python, I suggested a little django.
+
+Our approach was between Trillian and AutoQC; we described a simple data exchange tool, and left the rest to the developers. Unfortunately, this was our first negative - no one jumped on BigVASP, possibly due to the task definition, or the fact that I personally tried rolling a demo as my first django app. Exploring django left me confident that it's the right tool, and equally confident that we need a django expert to guide us while I stick to node - if you're that django expert, check us out at <a href="https://github.com/spiningup/BigVASP">https://github.com/spiningup/BigVASP</a>.
+
+I think the first sprint was a great success - we pushed projects forward, and got first insights into cross-professional-culture collaboration. It’s early yet, and I anticipate many counterexamples to these simple lessons - but sprinting on our first projects let us break out of guesswork early, and start identifying where connections between researchers and coders really lie.
