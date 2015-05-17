@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hooks: Developer Engagement at #mozsprint"
+title:  "Creating Instruction: Notes from UVa SWC Teacher Training"
 date:   2014-09-29
 ---
 
