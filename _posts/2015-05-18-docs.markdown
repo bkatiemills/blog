@@ -10,9 +10,9 @@ The thing that originally lead me to the open science movement is one of the thi
 
 Discoverability is the first obvious barrier to finding opportunities to work together; but I'm betting that the stronger communication and community ties that undergird the [Study Group program][studyGroups] we're spooling up over at Mozilla will take the punch out of that one. We experience the next big hurdle every time we look at someone else's code for the first time, and ask ourselves, brow furrowed and slightly annoyed, *what is this hot mess, anyway?*
 
-Making sense of someone else's code is harder than writing your own. Write your own, and you can choose tools and techniques you are comfortable with, in patterns that make intuitive sense to you, one step at a time. Use someone else's, and there's no telling what will come up.
+Making sense of someone else's code is harder than writing your own. Write your own, and you can choose tools and techniques you are comfortable with, in patterns that make intuitive sense to you, one step at a time. Use someone else's, and there's no telling what will come up. For most, myself included for many years, that's game over - figuring out what code science hath wrought can feel like too big a barrier to be worthwhile.
 
-For most, myself included for many years, that's game over - figuring out what code science hath wrought is just too big a barrier to feel worthwhile. How can we make this easier? Recently I've been exploring the possibility of building better on-ramps to coding projects, in the form of the Ten Minute Plan.
+How can we make this easier? How can we set open science up to welcome newcomers? Recently I've been exploring the possibility of building better on-ramps to coding projects, in the form of the Ten Minute Plan.
 
 ### Ten Minute Plans
 
