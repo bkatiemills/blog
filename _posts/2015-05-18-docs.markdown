@@ -6,9 +6,9 @@ date: 2015-05-17
 permalink: ten-minute-plans
 ---
 
-The thing that originally lead me to the open science movement is one of the things I remain most passionate about: code reuse. It drives me B-A-N-A-N-A-S when we start from scratch unnecessarily; code reuse is a big piece of what 'standing on the shoulders of giants' means today.
+The thing that originally lead me to the open science movement is one of the things I remain most passionate about: code reuse & collaboration. It drives me B-A-N-A-N-A-S when we start from scratch unnecessarily; code reuse is a big piece of what 'standing on the shoulders of giants' means today.
 
-Discoverability is the first obvious barrier to reuse; but I'm betting that the stronger communication and community ties that undergird the [Study Group program][studyGroups] we're spooling up over at Mozilla will take the punch out of that one. We experience the next big hurdle every time we look at someone else's code for the first time, and ask ourselves, brow furrowed and slightly annoyed, *what is this hot mess, anyway?*
+Discoverability is the first obvious barrier to finding opportunities to work together; but I'm betting that the stronger communication and community ties that undergird the [Study Group program][studyGroups] we're spooling up over at Mozilla will take the punch out of that one. We experience the next big hurdle every time we look at someone else's code for the first time, and ask ourselves, brow furrowed and slightly annoyed, *what is this hot mess, anyway?*
 
 Making sense of someone else's code is harder than writing your own. Write your own, and you can use only tools and techniques you are comfortable with, in patterns that make intuitive sense to you, one step at a time. Use someone else's, and there's no telling what techno-alchemy they'll have pulled from the deep corners of their mind, too late at night and too close to their submission deadline, that you now have to contend with. 
 
