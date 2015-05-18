@@ -32,7 +32,7 @@ A ten minute plan **does not**:
 
 ### Sure But Why?
 
-The point of the ten minute plan is to help new users and contributors build a first mental model of the code - there will still be tons of details left to learn after the fact, but at least they've got the general lay of the land. While we certainly can't communicate everything about a piece of code in ten minutes (and shouldn't try), the one crucial thing I think we can do, is dispel that overwhelming sense of 'WTF?' people experience when they first look at our code.
+The point of the ten minute plan is to help new users and contributors build a first mental model of the code - there will still be tons of details left to learn after the fact, but at least they've got the general lay of the land. For my Software Carpentry friends, this is your novice learner's basic 'concept map'. While we certainly can't communicate everything about a piece of code in ten minutes (and shouldn't try), the one crucial thing I think we can do, is dispel that overwhelming sense of 'WTF?' people experience when they first look at our code.
 
 Another thing we get out of helping to construct this mental model, is that we have a better chance of helping new collaborators make contact with things they already know. Your black box was mysterious and kind of unnerving at first, but when we break it down even at the view from 30,000 feet that a ten minute plan affords, newcomers have a better chance of recognizing some bits and pieces they might be a little more confident starting with.
 
