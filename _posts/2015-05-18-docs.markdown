@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Strange Alien Technology"
+subtitle: "Helping New Collaborators Get Onboard"
 date: 2015-05-17
 permalink: ten-minute-plans
 ---
@@ -47,7 +48,7 @@ The details are a bit arcane for anyone not into nuclear sort codes, but the ide
 
 I wrote [another one][diversibee], for those who do not dig flow charts as much as me, for the Diversibee project, on deck for hacking at [MSL's Global Sprint][sprint] in a couple weeks. The first section gives a few bullets on the general flow of the game (it's an educational ecology game about going bankrupt from overfarming); the second describes how some of the main functions fit together to make the magic happen; and at the bottom I include a handy reference of where I've stashed all the game state data. In the same vein, I also included a [wiki page][beeWiki] giving a brief overview of the ecological processes imitated in the game, so people can get a quick idea of the project from a bee enthusiast's perspective.
 
-Finally, I stumbled across someone else doing this (hooray!) just today; [Richard Morey][morey] is the author of a JavaScript-based statistics visualization and teaching library, [stat-distribution-js][statsJS]. In his README, Morey gives a quick description of what is library does and how it does it, that lets his users know the broad strokes in just a couple of minutes.
+Finally, I stumbled across someone else doing this (hooray!) just today; [Richard Morey][morey] is the author of a JavaScript-based statistics visualization and teaching library, [stat-distribution-js][statsJS]. In his README, Morey gives a quick description of what his library does and how it does it, that lets his users know the broad strokes in just a couple of minutes.
 
 #### Conclusion
 
