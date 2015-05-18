@@ -52,7 +52,7 @@ Finally, I stumbled across someone else doing this (hooray!) just today; [Richar
 
 ### Conclusion
 
-Ten minute plans are part of a bigger narrative: encouraging reuse, collaboration and participation in research software. There is no substitute for effort and focus when finding your feet in any science project, code or otherwise; but what I'd like to see us do, is find and build ways to better reward and amplify that effort, and ensure that it leads to a great return on investment for the people that choose to participate. By helping scaffold and guide participation in our coding projects, we not only make that effort more efficient, we encourage participation and welcome newcomers by making their road to success as smooth and rewarding as possible.
+Ten minute plans are part of a bigger narrative: encouraging reuse, collaboration and participation in research software. It's always going to take a ton of effort and focus to find your feet in any science project, code or otherwise; but what I'd like to see us do, is find and build ways to better reward and amplify that effort, and ensure that it leads to a greater return on investment for the people that choose to participate. By helping scaffold and guide participation in our coding projects, we not only make that effort more efficient, we encourage participation and welcome newcomers by making their road to success as smooth and rewarding as possible.
 
 
 [studyGroups]: http://mozillascience.github.io/studyGroupHandbook/
