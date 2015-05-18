@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Someone Else's Code"
-subtitle: "how to set collaborators up for success"
+subtitle: "setting collaborators up for success"
 date: 2015-05-17
 permalink: ten-minute-plans
 ---
 
-The thing that originally lead me to the open science movement is one of the things I remain most passionate about: code reuse & collaboration. It drives me B-A-N-A-N-A-S when we start from scratch unnecessarily; code reuse is a big piece of what 'standing on the shoulders of giants' means today.
+The thing that originally lead me to the open science movement is one of the things I remain most passionate about: code reuse & collaboration. It drives me B-A-N-A-N-A-S when we are forced to start from scratch instead of building on one another's work; code reuse is a big piece of what 'standing on the shoulders of giants' means today.
 
 Discoverability is the first obvious barrier to finding opportunities to work together; but I'm betting that the stronger communication and community ties that undergird the [Study Group program][studyGroups] we're spooling up over at Mozilla will take the punch out of that one. We experience the next big hurdle every time we look at someone else's code for the first time, and ask ourselves, brow furrowed and slightly annoyed, *what is this hot mess, anyway?*
 
