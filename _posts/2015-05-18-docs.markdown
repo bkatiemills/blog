@@ -30,7 +30,7 @@ A ten minute plan **does not**:
  - Explore in full technical depth the details of even the parts of the code it does touch on.
  - Substitute for more complete or conventional forms of documentation. 
 
-### Sure buy why?
+### Sure But Why?
 
 The point of the ten minute plan is to help new users and contributors build a first mental model of the code - there will still be tons of details left to learn after the fact, but at least they've got the general lay of the land. While we certainly can't communicate everything about a piece of code in ten minutes (and shouldn't try), the one crucial thing I think we can do, is dispel that overwhelming sense of 'WTF?' people experience when they first look at our code.
 
