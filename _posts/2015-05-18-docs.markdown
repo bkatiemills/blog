@@ -16,7 +16,7 @@ For most, myself included for many years, that's game over - figuring out what c
 
 ### Ten Minute Plans
 
-Nobody RTFMs - especially not me, because it takes *forever*, and I want to get down to business! What I'm starting to do on my own projects and would like to see more of out there, is the creation of what I call 'ten minute plans': a description that gives a newcomer a short, high-level tour of the programmatic logic of the project, that can be read and digested in under ten minutes.
+What I'm starting to do on my own projects and would like to see more of out there, is the creation of what I call 'ten minute plans': a description that gives a newcomer a short, high-level tour of the programmatic logic of the project, that can be read and digested in under ten minutes.
 
 A good ten minute plan should:
 
