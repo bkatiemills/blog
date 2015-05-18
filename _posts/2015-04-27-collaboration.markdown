@@ -2,6 +2,7 @@
 layout: post
 title:  "Teaming Up: How to Build Your Open Science Collaboration"
 date:   2015-04-27
+permalink: test
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*
