@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Strange Alien Technology"
-subtitle: "Helping New Collaborators Get Onboard"
+subtitle: "Helping New Open Science Collaborators Get Started"
 date: 2015-05-17
 permalink: ten-minute-plans
 ---
