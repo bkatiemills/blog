@@ -10,7 +10,7 @@ The thing that originally lead me to the open science movement is one of the thi
 
 Discoverability is the first obvious barrier to finding opportunities to work together; but I'm betting that the stronger communication and community ties that undergird the [Study Group program][studyGroups] we're spooling up over at Mozilla will take the punch out of that one. We experience the next big hurdle every time we look at someone else's code for the first time, and ask ourselves, brow furrowed and slightly annoyed, *what is this hot mess, anyway?*
 
-Making sense of someone else's code is harder than writing your own. Write your own, and you can choose tools and techniques you are comfortable with, in patterns that make intuitive sense to you, one step at a time. Use someone else's, and there's no telling what techno-alchemy they'll have pulled from the deep corners of their mind, too late at night and too close to their submission deadline, that you now have to contend with. 
+Making sense of someone else's code is harder than writing your own. Write your own, and you can choose tools and techniques you are comfortable with, in patterns that make intuitive sense to you, one step at a time. Use someone else's, and there's no telling what will come up.
 
 For most, myself included for many years, that's game over - figuring out what code science hath wrought is just too big a barrier to feel worthwhile. How can we make this easier? Recently I've been exploring the possibility of building better on-ramps to coding projects, in the form of the Ten Minute Plan.
 
@@ -36,7 +36,7 @@ The point of the ten minute plan is to help new users and contributors build a f
 
 Another thing we get out of helping to construct this mental model, is that we have a better chance of helping new collaborators make contact with things they already know. Your black box was mysterious and kind of unnerving at first, but when we break it down even at the view from 30,000 feet that a ten minute plan affords, newcomers have a better chance of recognizing some bits and pieces they might be a little more confident starting with.
 
-Also, a decent ten minute plan can help us communicate with our collaborators. By giving even a little bit of early guidance in the formation of their mental models, we set ourselves up to be on the same page as them when they start asking questions or, wonder of wonders, making pull requests. I first articulated the notion of a ten minute plan in the [primer][review] on code review I wrote for MSL (ok, they were five minute plans there, but whatever), in the context of helping contributors articulate exactly what they were trying to contribute to; if we all have the same set of high-level boxes to begin with, we'll have an easier time discussing what ideas fit where (or don't fit at all).
+Also, a decent ten minute plan can help us communicate with our collaborators. By giving even a little bit of early guidance in the formation of their mental models, we set ourselves up to be on the same page as them when they start asking questions and making pull requests. I first articulated the notion of a ten minute plan in the [primer][review] on code review I wrote for MSL (ok, they were five minute plans there, but whatever), in the context of helping contributors articulate exactly what they were trying to contribute to; if we all have the same set of high-level boxes to begin with, we'll have an easier time discussing what ideas fit where (or don't fit at all).
 
 ### Examples
 
