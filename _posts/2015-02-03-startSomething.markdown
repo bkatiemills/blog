@@ -2,6 +2,7 @@
 layout: post
 title:  "Start Something: Emerging Communities of Practice in Vancouver"
 date:   2015-02-03
+permalink: start-something
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*

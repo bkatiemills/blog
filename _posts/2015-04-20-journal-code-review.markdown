@@ -2,6 +2,7 @@
 layout: post
 title:  "Effective Code Review for Journals"
 date:   2015-04-20
+permalink: code-review-for-journals
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*

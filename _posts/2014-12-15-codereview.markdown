@@ -2,6 +2,7 @@
 layout: post
 title:  "Code Review for Scientists: Findings & Strategies"
 date:   2014-12-15
+permalink: code-review-strategies
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*

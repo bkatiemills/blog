@@ -2,6 +2,7 @@
 layout: post
 title:  "Codefest"
 date:   2014-09-07
+permalink: nceas-codefest-2014
 ---
 
 *This post adpated from the original on the Mozilla Science Lab's blog.*

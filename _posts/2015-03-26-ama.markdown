@@ -2,6 +2,7 @@
 layout: post
 title:  "Ask Us Anything: Lessons from the Local Research Coding Groups Panel Discussion"
 date:   2015-03-26
+permalink: ama
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*

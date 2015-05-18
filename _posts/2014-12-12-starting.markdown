@@ -2,6 +2,7 @@
 layout: post
 title:  "Starting Instruction: Feedback from the New Instructor Community"
 date:   2014-12-12
+permalink: instructor-feedback
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*

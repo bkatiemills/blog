@@ -2,6 +2,7 @@
 layout: post
 title:  "The Future You Want"
 date:   2014-08-20
+permalink: future-you-want
 ---
 
 As a sometimes-physicist, every time someone stuck in traffic looks up at the sky and wonders, ‘where the hell is my flying skateboard, anyway?‘, I feel a little guilty.  I’m truly sorry we haven’t built the future you want yet; I want it, too.  Some new things need to happen before we can.  The good news is that the barriers to those things are beginning to crumble, and a way forward is beginning to appear.

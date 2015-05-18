@@ -2,6 +2,7 @@
 layout: post
 title:  "A Compelling Argument"
 date:   2014-10-31
+permalink: a-compelling-argument
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*

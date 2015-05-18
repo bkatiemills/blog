@@ -2,6 +2,7 @@
 layout: post
 title:  "Instructor Training at the Research Bazaar"
 date:   2015-02-20
+permalink: train-the-trainers-resbaz
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog, With contributions from Damien Irving and Kaitlin Thaney.*

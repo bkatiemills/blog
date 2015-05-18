@@ -2,6 +2,7 @@
 layout: post
 title:  "Creating Instruction: Notes from UVa SWC Teacher Training"
 date:   2014-09-29
+permalink: swc-instructor-training-uva
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*

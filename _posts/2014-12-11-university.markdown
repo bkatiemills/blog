@@ -2,6 +2,7 @@
 layout: post
 title:  "Open Science Goes to University"
 date:   2014-12-11
+permalink: open-science-goes-to-university
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*

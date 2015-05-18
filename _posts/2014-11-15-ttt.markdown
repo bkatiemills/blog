@@ -2,6 +2,7 @@
 layout: post
 title:  "Train the Trainers: Next Iterations"
 date:   2014-11-15
+permalink: thinking-about-train-the-trainers
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*

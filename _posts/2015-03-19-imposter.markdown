@@ -2,6 +2,7 @@
 layout: post
 title:  "Bullying & Imposter Phenomenon: the Fraught Process of Learning to Code in the Lab"
 date:   2015-03-19
+permalink: bullying-and-imposter-phenomenon
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*

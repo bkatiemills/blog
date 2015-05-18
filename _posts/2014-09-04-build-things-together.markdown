@@ -2,6 +2,7 @@
 layout: post
 title:  "Build Things Together"
 date:   2014-09-04
+permalink: build-things-together
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*

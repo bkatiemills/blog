@@ -2,6 +2,7 @@
 layout: post
 title:  "What & How: Lessons Learned from Software Carpentry Instructor Training"
 date:   2015-01-09
+permalink: lessons-from-swc-instructor-training
 ---
 
 *This post originally appeared on the Mozilla Science Lab's blog.*
