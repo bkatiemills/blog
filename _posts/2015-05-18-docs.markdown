@@ -10,13 +10,13 @@ The thing that originally lead me to the open science movement is one of the thi
 
 Discoverability is the first obvious barrier to finding opportunities to work together; but I'm betting that the stronger communication and community ties that undergird the [Study Group program][studyGroups] we're spooling up over at Mozilla will take the punch out of that one. We experience the next big hurdle every time we look at someone else's code for the first time, and ask ourselves, brow furrowed and slightly annoyed, *what is this hot mess, anyway?*
 
-Making sense of someone else's code is harder than writing your own. Write your own, and you can use only tools and techniques you are comfortable with, in patterns that make intuitive sense to you, one step at a time. Use someone else's, and there's no telling what techno-alchemy they'll have pulled from the deep corners of their mind, too late at night and too close to their submission deadline, that you now have to contend with. 
+Making sense of someone else's code is harder than writing your own. Write your own, and you can choose tools and techniques you are comfortable with, in patterns that make intuitive sense to you, one step at a time. Use someone else's, and there's no telling what techno-alchemy they'll have pulled from the deep corners of their mind, too late at night and too close to their submission deadline, that you now have to contend with. 
 
 For most, myself included for many years, that's game over - figuring out what code science hath wrought is just too big a barrier to feel worthwhile. How can we make this easier? Recently I've been exploring the possibility of building better on-ramps to coding projects, in the form of the Ten Minute Plan.
 
-#### Ten Minute Plans
+### Ten Minute Plans
 
-Nobody RTFMs - especially not me, probably because most docs rarely help me understand how a project is put together. What I'm starting to do and would like to see more of, is the creation of what I call 'ten minute plans' for coding projects: a description that gives a newcomer a short, high-level tour of the programmatic logic of the project, that can be read and digested in under ten minutes.
+Nobody RTFMs - especially not me, because it takes *forever*, and I want to get down to business! What I'm starting to do on my own projects and would like to see more of out there, is the creation of what I call 'ten minute plans': a description that gives a newcomer a short, high-level tour of the programmatic logic of the project, that can be read and digested in under ten minutes.
 
 A good ten minute plan should:
 
@@ -30,7 +30,7 @@ A ten minute plan **does not**:
  - Explore in full technical depth the details of even the parts of the code it does touch on.
  - Substitute for more complete or conventional forms of documentation. 
 
-#### Sure buy why?
+### Sure buy why?
 
 The point of the ten minute plan is to help new users and contributors build a first mental model of the code - there will still be tons of details left to learn after the fact, but at least they've got the general lay of the land. While we certainly can't communicate everything about a piece of code in ten minutes (and shouldn't try), the one crucial thing I think we can do, is dispel that overwhelming sense of 'WTF?' people experience when they first look at our code.
 
@@ -38,7 +38,7 @@ Another thing we get out of helping to construct this mental model, is that we h
 
 Also, a decent ten minute plan can help us communicate with our collaborators. By giving even a little bit of early guidance in the formation of their mental models, we set ourselves up to be on the same page as them when they start asking questions or, wonder of wonders, making pull requests. I first articulated the notion of a ten minute plan in the [primer][review] on code review I wrote for MSL (ok, they were five minute plans there, but whatever), in the context of helping contributors articulate exactly what they were trying to contribute to; if we all have the same set of high-level boxes to begin with, we'll have an easier time discussing what ideas fit where (or don't fit at all).
 
-#### Examples
+### Examples
 
 The first thing resembling a ten minute plan I ever wrote looked something like this:
 
@@ -50,7 +50,7 @@ I wrote [another one][diversibee], for those who do not dig flow charts as much 
 
 Finally, I stumbled across someone else doing this (hooray!) just today; [Richard Morey][morey] is the author of a JavaScript-based statistics visualization and teaching library, [stat-distribution-js][statsJS]. In his README, Morey gives a quick description of what his library does and how it does it, that lets his users know the broad strokes in just a couple of minutes.
 
-#### Conclusion
+### Conclusion
 
 Ten minute plans are part of a bigger narrative: encouraging reuse, collaboration and participation in research software. There is no substitute for effort and focus when finding your feet in any science project, code or otherwise; but what I'd like to see us do, is find and build ways to better reward and amplify that effort, and ensure that it leads to a great return on investment for the people that choose to participate. By helping scaffold and guide participation in our coding projects, we not only make that effort more efficient, we encourage participation and welcome newcomers by making their road to success as smooth and rewarding as possible.
 
