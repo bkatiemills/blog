@@ -16,7 +16,7 @@ For most, myself included for many years, that's game over - figuring out what c
 
 #### Ten Minute Plans
 
-Nobody RTFMs - especially not me, probably because most docs rarely help me understand how a project is put together. What I'm starting to do and would like to see more of, is the creation of what I call 'ten minute plans' for coding project: a description that gives a newcomer a short, high-level tour of the programmatic logic of the project, that can be read and digested in under ten minutes.
+Nobody RTFMs - especially not me, probably because most docs rarely help me understand how a project is put together. What I'm starting to do and would like to see more of, is the creation of what I call 'ten minute plans' for coding projects: a description that gives a newcomer a short, high-level tour of the programmatic logic of the project, that can be read and digested in under ten minutes.
 
 A good ten minute plan should:
 
