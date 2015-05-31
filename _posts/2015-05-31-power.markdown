@@ -6,7 +6,7 @@ date: 2015-05-31
 permalink: power-and-communication
 ---
 
-## A tale of two pull requests
+#### A tale of two pull requests
 
 PR the first is on a project I've been working on from the ground up, a data validation project that from an engineering standpoint is a relatively straightforward collection of Python modules and tests. In this PR, I close several major issues and re-write big chunks of code from other contributors to make it easier to test.
 
@@ -16,7 +16,7 @@ The biggest difference between these pulls: *the second one doesn't actually exi
 
 Which brings us to a particularly nasty monster under the open source community's bed.
 
-## The Misplaced Power of Speaking Out
+#### The Misplaced Power of Speaking Out
 
 The mini-stories above illustrate the enormous impact that confidence has on someone's ability to participate in open source. Even though I have a valuable contribution to make to that second project, the anxiety of thinking I've misunderstood something caused me to hold back. And if someone like me who usually deals with anxiety by charging it at full speed is muzzled by those feelings, I think a great many people will choose to never participate at all.
 
@@ -28,7 +28,7 @@ A form of power is prerequisite for open source's assertive communication style,
 
 Being belittled and threatened and told to shut up as a matter of course when growing up is the experience of many; and it does not correlate to programming ability *at all*. It is not enough to simply not be overtly rude to contributors; the tone was set by someone else long before your first commit. What are we losing by hearing only the brash?
 
-## The Art of Conversation
+#### The Art of Conversation
 
 We may not be able to undo the grave imbalances of power in our society with a single repo, but we certainly can be proactive about eliminating some of those barriers in our own collaborations. Consider some of the basic tenants of good conversation: putting people at ease; allowing others to save face; introductions and inclusion; politeness. All of these things are designed to the same ends: to lower the costs and mitigate the risks of speaking one's mind and participating in an exchange of ideas. And while they may sound like the province of dinner parties and ballroom receptions, all of these ideas have concrete parallels in open source:
 
