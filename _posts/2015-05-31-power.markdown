@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Pull Request This"
+subtitle: "Power & Communication in Open Source"
+date: 2015-05-31
+permalink: power-and-communication
+---
+
+## A tale of two pull requests
+
+PR the first is on a project I've been working on from the ground up, a data validation project that from an engineering standpoint is a relatively straightforward collection of Python modules and tests. In this PR, I close several major issues and re-write big chunks of code from other contributors to make it easier to test.
+
+PR the second is on a nifty blogging framework, that uses some fancy tricks to decouple locally duplicated markup from centrally distributed styling. I just started participating in this project recently, but I think I can close a simple issue.
+
+The biggest difference between these pulls: *the second one doesn't actually exist*. Even though I've written a solution to an issue on the second project that I can demonstrate works, I've been struggling with a really opaque part of the build process (no Makefile... no gruntfile... no README... no N O T H I N G) for days, and I'm simply not confident I've grokked this project well enough to start a conversation about it.
+
+Which brings us to a particularly nasty monster under the open source community's bed.
+
+## The Misplaced Power of Speaking Out
+
+The mini-stories above illustrate the enormous impact that confidence has on someone's ability to participate in open source. Even though I have a valuable contribution to make to that second project, the anxiety of thinking I've misunderstood something caused me to hold back. And if someone like me who usually deals with anxiety by charging it at full speed is muzzled by those feelings, I think a great many people will choose to never participate at all.
+
+Meanwhile, my contributions to the first have set the tone for the entire project - even though it is in a field of research I know *absolutely nothing about*. The fact that I was willing to present my ideas in the form of open source contributions conferred a surprising amount of power on someone who had done little to earn it besides speaking his mind.
+
+All of which seemed very natural when left unexamined; the first privilege of power is to be able to exercise it heedlessly.
+
+A form of power is prerequisite for open source's assertive communication style, as well as conferred by it. Imagine someone who grew up being taught to defer to authority; to speak when spoken to; to be wary of the risks of attracting attention to themselves and to be mindful of the power of an artificially constructed caste of 'betters'. Communication in open source is antithetical to this experience: it is entirely proactive and assertive, and the towering fear some people experience of speaking out of turn thus becomes a huge barrier to participation.
+
+Being belittled and threatened and told to shut up as a matter of course when growing up is the experience of many; and it does not correlate to programming ability *at all*. It is not enough to simply not be overtly rude to contributors; the tone was set by someone else long before your first commit. What are we losing by hearing only the brash?
+
+## The Art of Conversation
+
+We may not be able to undo the grave imbalances of power in our society with a single repo, but we certainly can be proactive about eliminating some of those barriers in our own collaborations. Consider some of the basic tenents of good conversation: putting people at ease; allowing others to save face; introductions and inclusion; politeness. All of these things are designed to the same ends: to lower the costs and mitigate the risks of speaking one's mind and participating in an exchange of ideas. And while they may sound like the province of dinner parties and ballroom receptions, all of these ideas have concrete parallels in open source:
+
+ - **Putting people at ease** is mostly the act of dispelling the anxieties our guests (or collaborators) have arrived with. Start a conversation with new collaborators within 24 hours of them making themselves known; ask them about their interests and their experiences so far, and you humanize everyone involved.
+ - **Saving face** is crucial for helping people feel safe taking risks in conversation or collaboration. Face-saving is a subtle benefit of the traditional contributing, setup and build instructions that should be in your project's README; in addition to those instructions' more obvious benefits, they give a new contributor a path to follow knowing that, should things go wrong, they can defend themselves by having followed the instructions the maintainers laid out, and offer to rectify the problem by updating or clarifying those instructions. As a maintainer and as a host, be the bigger person and accept a little responsibility for guiding your guests' experience, so the onus isn't all on them.
+ - **Introductions** are something we do over at [Collaborate](https://www.mozillascience.org/collaborate/): encourage newcomers to open an issue just to say hi and introduce themselves. This lowers the barriers to communication since there's nothing to get 'wrong', and creates an opportunity for the maintainers to help guide newcomers to a place where they can be effective (see *putting people at ease*, above).
+ - **Don't tolerate bad behavior**. Just as it might be time for the gentleman wearing the lampshade to find a cab, it's not worth keeping disruptive influences around your project. No contributor has the right to be rude, abusive, or condecending to their colleagues (note: most bad behaviour is committed by people who can't or won't recognize that their co-contributors are exactly that: *colleagues*), no matter how many PRs they've merged. Fire them; in the long run, your project will be stronger for it.
+
+At its best, open source is a forum for the free exchange of ideas in the same way a good party or conference should be; but like these events, we won't achieve the full flower of that ideal until we reflect upon how free those exchanges really are, and take action to make them so.
