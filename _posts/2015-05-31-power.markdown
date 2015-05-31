@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pull Request This"
+title: "PULL REQUEST THIS:"
 subtitle: "Power & Communication in Open Source"
 date: 2015-05-31
 permalink: power-and-communication
