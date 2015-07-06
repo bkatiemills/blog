@@ -17,7 +17,7 @@ While we race to slap as much data up on the web as possible, we need to think a
 All datasets should either come with or point to a piece of open-source software that can be used to ingest that data, delivering it to a usable in-memory form in at least one programming language. For example, at the International Quality Controlled Ocean Database, we include [a Python class][decode] that will unpack the [highly inscrutable WOD data format][WOD] into an object that has [well documented methods][decodeDocs] to return all the information we want about the deep blue sea. At high level, requirements for a decoder should include:
 
  - **Self containment.** The decoder should be encapsulated as a class, function, module or some other appropriate structure that does not require a user to massage or understand the underlying code.
- - **Thorough documentation.** Decoder docs should make it clear, as succinctly as possible, how to extract data from the resulting object, and where the formal definitions of those data reside (vis: a pointer to the schema.org-like-index described above).
+ - **Thorough documentation.** Decoder docs should make it clear, as succinctly as possible, how to extract data from the resulting object, and where the formal definitions of those data reside (vis: a pointer to the schema.org-like-index described below).
 
 ### Data Peer Review
 
