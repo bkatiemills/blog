@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Truly Open Data"
-subtitle: "What We Need to Do to Make This Work"
 date: 2015-07-06
 permalink: truly-open-data
 ---
