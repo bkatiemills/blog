@@ -35,7 +35,7 @@ C41303567064US5112031934 8 744210374426193562-17227140 6110101201013011182205814
 
 ```
 
-Like I said, easy to read, right? If this is a bit opaque, there's a [170 page pdf][wod] that explains how to unpack this. Or, grab our new parser off of PyPI:
+Like I said, easy to read, right? If this is a bit opaque, there's a [170 page pdf][wod] that explains how to unpack this. This is the sort of slog that can really ruin the open data party; to avoid all this pain, grab our new parser off of PyPI:
 
 ```
 sudo pip install wodpy
