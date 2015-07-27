@@ -62,7 +62,7 @@ By wrapping up our decoding in a something like the `WodProfile` class, that has
 
 [fMRI]: http://www.livescience.com/51523-massive-brain-scan-database-goes-online.html
 [Ramirez]: http://journal.frontiersin.org/article/10.3389/fevo.2015.00091/abstract
-[opendata]: blog/truly-open-data
+[opendata]: http://billmills.github.io/blog/truly-open-data
 [iquod]: https://github.com/IQuOD
 [wod]: http://data.nodc.noaa.gov/woa/WOD/DOC/wodreadme.pdf
 [toy]: https://github.com/BillMills/woddemo 
