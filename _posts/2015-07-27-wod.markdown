@@ -14,7 +14,7 @@ Standardized data formats are worth the trouble because they are easy to read; m
 
 Here's some World Ocean Database data:
 
-<pre>
+```
 C41303567064US5112031934 8 744210374426193562-17227140 6110101201013011182205814
 01118220291601118220291901024721 8STOCS85A3 41032151032165-500632175-50023218273
 18117709500110134401427143303931722076210220602291107291110329977020133023846181
@@ -32,20 +32,25 @@ C41303567064US5112031934 8 744210374426193562-17227140 6110101201013011182205814
 03312050033281000220100033289500442309000332670002227100331123003328100022025002
 22900044231910033286200222900033115400332810002205000342-12300442324100332728003
 32117003312560033280500 
-</pre>
+
+```
 
 Like I said, easy to read, right? If this is a bit opaque, there's a [170 page pdf][wod] that explains how to unpack this. Or, grab our new parser off of PyPI:
 
- > sudo pip install wodpy
+```
+sudo pip install wodpy
+```
 
 throw that block of data into a file `data.dat`, and give this Python script a try:
 
-> from wodpy import wod
->
-> file = open("data.dat")
-> profile = wod.WodProfile(file)
->
-> print profile.latitude()
+```
+from wodpy import wod
+
+file = open("data.dat")
+profile = wod.WodProfile(file)
+
+print profile.latitude()
+```
 
 *et voila*: the latitude this measurement was taken at is returned. This data and toy demo are in [this repo][toy]; the README in the main [wodpy repo][wodpy] describes all the methods the `WodProfile` object provides for extracting usable information from the terse format it came in. Big thanks to Simon Good out of the UK Met Office for hammering out the first version of this class in our [AutoQC][autoqc] project.
 
