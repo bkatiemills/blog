@@ -40,13 +40,13 @@ What's more, our colleagues over at the LHC have recently adopted an [open data 
 
 Wrong. I'm sure there will be nuances and speedbumps, and digging into those details is exactly what I was talking about in the introduction to this post; please, let me know your criticisms and ideas on how we can meet the challenges I laid out above in the [comments][issue]. I'm looking forward to seeing what progress we can make on these fronts at TRIUMF, and to digging deeper into the role of scientific software development - more on that quest later this week, and these initiatives as they evolve.
 
-[thread][https://github.com/mozillascience/studyGroupLessons/issues/7]
-[arxiv][http://arxiv.org/abs/0906.5418]
-[prc][http://arxiv.org/find/grp_physics/1/jr:+AND+C+AND+Phys+Rev/0/1/0/all/0/1]
-[jopg][http://iopscience.iop.org/0954-3899/page/Why%20publish%20with%20JPhysG]
-[data][https://peerj.com/articles/175/]
-[issue][]
-[swcite][https://www.force11.org/group/software-citation-working-group]
-[astro][http://astronomy-software-index.github.io/2015-workshop/]
-[zenodo][https://guides.github.com/activities/citable-code/]
-[lhc][http://opendata.cern.ch/research]
+[thread]: https://github.com/mozillascience/studyGroupLessons/issues/7
+[arxiv]: http://arxiv.org/abs/0906.5418
+[prc]: http://arxiv.org/find/grp_physics/1/jr:+AND+C+AND+Phys+Rev/0/1/0/all/0/1
+[jopg]: http://iopscience.iop.org/0954-3899/page/Why%20publish%20with%20JPhysG
+[data]: https://peerj.com/articles/175/
+[issue]: https://github.com/BillMills/blog/issues/2]
+[swcite]: https://www.force11.org/group/software-citation-working-group
+[astro]: http://astronomy-software-index.github.io/2015-workshop/
+[zenodo]: https://guides.github.com/activities/citable-code/
+[lhc]: http://opendata.cern.ch/research
