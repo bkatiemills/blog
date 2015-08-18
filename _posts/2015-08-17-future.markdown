@@ -45,7 +45,7 @@ Wrong. I'm sure there will be nuances and speedbumps, and digging into those det
 [prc]: http://arxiv.org/find/grp_physics/1/jr:+AND+C+AND+Phys+Rev/0/1/0/all/0/1
 [jopg]: http://iopscience.iop.org/0954-3899/page/Why%20publish%20with%20JPhysG
 [data]: https://peerj.com/articles/175/
-[issue]: https://github.com/BillMills/blog/issues/2]
+[issue]: https://github.com/BillMills/blog/issues/2
 [swcite]: https://www.force11.org/group/software-citation-working-group
 [astro]: http://astronomy-software-index.github.io/2015-workshop/
 [zenodo]: https://guides.github.com/activities/citable-code/
