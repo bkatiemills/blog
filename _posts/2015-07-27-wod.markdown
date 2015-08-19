@@ -66,5 +66,5 @@ By wrapping up our decoding in a something like the `WodProfile` class, that has
 [iquod]: https://github.com/IQuOD
 [wod]: http://data.nodc.noaa.gov/woa/WOD/DOC/wodreadme.pdf
 [toy]: https://github.com/BillMills/woddemo 
-[wodpy]: https://github.com/BillMills/wodpy
+[wodpy]: https://github.com/IQuOD/wodpy
 [autoqc]: https://github.com/IQuOD/AutoQC
