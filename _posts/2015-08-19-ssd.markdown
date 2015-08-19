@@ -31,7 +31,7 @@ By keeping our colleagues involved in an open conversation around a development 
 
 I love node.js. I could pretend to make a bunch of technical or strategic arguments for its use, but honestly: I just think it's fun, and left to my own devices, I'll use it for a lot of my server-side needs, which is exactly what I did during my last postdoc. Trouble was, I was the only JavaScript developer in that lab, and when I left, all that work might as well have been advanced technology from a lost and inscrutable alien empire - interesting, possibly powerful, but unusable and unmaintainable in the hands it fell into. In order for our work as scientific software developers to reach its potential, we need to help support a program of capacity building in our labs and institutions. That way, our colleagues will be better able to use, adapt and maintain our code without our direct involvement - and so we can focus on building code *with* them, rather than building code *for* them. 
 
-> *... focus on building code *with* [our colleagues], rather than building code *for* them.*
+> *... focus on building code* with *[our colleagues], rather than building code* for *them.*
 
 In order to mitigate the around-the-block help request lineups many of us entertain, there are a few programs scientific software developers should involve themselves in:
 
