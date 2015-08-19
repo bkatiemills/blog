@@ -40,59 +40,13 @@ What's more, our colleagues over at the LHC have recently adopted an [open data 
 
 Wrong. I'm sure there will be nuances and speedbumps, and digging into those details is exactly what I was talking about in the introduction to this post; please, let me know your criticisms and ideas on how we can meet the challenges I laid out above in the [comments][issue]. I'm looking forward to seeing what progress we can make on these fronts at TRIUMF, and to digging deeper into the role of scientific software development - more on that quest later this week, and these initiatives as they evolve.
 
-[thread][https://github.com/mozillascience/studyGroupLessons/issues/7]
-[arxiv][http://arxiv.org/abs/0906.5418]
-[prc][http://arxiv.org/find/grp_physics/1/jr:+AND+C+AND+Phys+Rev/0/1/0/all/0/1]
-[jopg][http://iopscience.iop.org/0954-3899/page/Why%20publish%20with%20JPhysG]
-[data][https://peerj.com/articles/175/]
-[issue][]
-[swcite][https://www.force11.org/group/software-citation-working-group]
-[astro][http://astronomy-software-index.github.io/2015-workshop/]
-[zenodo][https://guides.github.com/activities/citable-code/]
-[lhc][http://opendata.cern.ch/research]
-
-
-
-
-
-
-
-
-
-## Scientific Software Developers
-
-Programming continues to move towards [center stage][ssi] in all fields of research, and this growing primacy is creating a generation of grad students and post docs like myself: classically trained scientists who find themselves thrust into roles that are mostly or entirely coding. My colleagues and I are and will continue to demand recognition for our contributions, and by virtue of experience and necessity, we are creating a new role in the lab: that of the Scientific Software Developer. This role will come into focus over the next few years, which means that now is the time to think about who and what we want these new scientists to be.
-
-This is a crucial conversation for the open science movement. Without mindfulness, scientific software developers may narrow their focus to their most obvious responsibility: writing quality scientific software. But the lesson we need to learn from Mozilla's Working Open Guide, and from collaborations like NCEAS' Codefest, CERN's Webfest, and the Global Sprint is that the *ways and contexts* in which we write that software will dramatically impact how open that code is, how sharable and collaborative it is, and by extension how much impact this new subfield has. Scientific software developers have the opportunity to break their fields of research out of their silos - but only if we are willing to embody a number of meta-skills exceeding code alone.
-
-#### Code Curation
-
-One of the key meta-responsibilities of the scientific software developer is to provide their lab with an awareness of what code is already out there for their use - in other words, to defeat the discoverability problem scientific software currently suffers from, by being able to provide our colleagues with informed recommendations on how to take advantage of the open source landscape. Without this awareness, we will continue to work in isolation, reinventing wheels in our separate labs and failing to leverage the power of the open source movement to accelerate and improve our coding. We can do this by creating a knowable landscape of relevant software within a field, and curating that knowledge within our institutions.
-
-A 'knowable landscape', in this case, means a multi-front conversation about what we're all hacking on at the moment. It consists of a few parts:
-
- - **Software Citation.** In order to break our code out of institutional silos, we need a way to discover it *in context* with the research it supports. That way, by staying abreast of the current literature in our fields (as one does in any case), we can develop a sense of the open source marketplace as it is affecting current research. 
- - **Conference talks & tracks.** In addition to citing our software after the fact, we need to start discussing it as it is developed, so we can help each other adapt early. Traditional software developers have a rich ecology of software conferences to discover what's new; scientific software developers need the same.
-
-#### End-To-End Openness
-
-Something Abby Cabunoc Mayes does an excellent job of championing over at Mozilla is the concept of 'working open', which she describes in detail in the similarly-named Guide: it won't be enough for scientific software developers to take their code and slap it up on GitHub after the fact - we need to include our colleagues in the open source development process from the very beginning, and keep them on board from start to finish.
-
-By keeping our colleagues involved in an open conversation around a development process that incorporates their input, we will create opportunities to fold in their ideas for how to make our projects as useful as possible, which multiplies the impact those software projects can have. But what's more, including people in a well-managed project helps them gain a sense of *ownership* of the code, and communicating throughout the process helps *win hearts and minds* as people watch, become familiar with, and participate in these projects. In contrast, parachuting a completed project onto people who have never heard of it before is a tough sell; relevance and usage aren't clear, and the up-front costs of integrating a new piece of software are too daunting without cultivated enthusiasm to carry people over the hump. The Working Open Guide treats these ideas in depth, but here's a few things to start:
-
- - **Onramps & Roadmaps.** By providing a clear roadmap of a project (starting perhpas with the 10 minute plans I wrote about a few months ago), we give our colleagues the context and clarity to offer feedback early; by making clear contributing guidelines, communicating future goals and curating simple issues for new contributors to tackle, we pave the way for people to get involved in our development projects - and it's those people who will champion the project in future in their home institutions, extending the impact and value of our work.
- - **Consistent Communication.** By leveraging things like twitter and a professional blog, as well as encouraging conversation in our issue trackers, scientific software developers can ensure that a conversation about their work is both visible and accessible throughout the development process, feeding all of the goals so far discussed: these communication channels both support the discoverability of our work, and help include as wide an audience as possible in its development.
-
-#### Capacity Building
-
-I love node.js. I could pretend to make a bunch of technical or strategic arguments for its use, but honestly: I just think its fun, and left to my own devices, I'll use it for a lot of my server-side needs, which is exactly what I did during my last post doc. Trouble was, I was the only JavaScript developer in that lab, and when I left, all that work might as well have been advanced technology from a lost and inscrutable alien empire - interesting, possibly powerful, but unusable and unmaintainable in the hands it fell into. In order for our work as scientific software developers to have the maximum use, we need to help support a program of capacity building in our labs and institutions. That way, our colleagues will be better able to use, adapt and maintain our code without our direct involvement - and so we can focus on building code *with* them, rather than building code *for* them. 
-
-In order to mitigate the around-the-block help request lineups many of us entertain, there are a few programs scientific software developers should involve themselves in:
-
- - **Software Carpentry** needs little introduction at this point - every cohort at every lab and institution should have this workshop made available to them as they begin their terms. Arranging a workshop is not especially difficult; a scientific software developer should shoot to throw one at least once a year.
- - **Study Groups** are the program I founded at Mozilla this year: regular, casual get-togethers for researchers to share skills and work together on problems and challenges. By helping organize an ongoing conversation and skill-building space like a Study Group, we create opportunities for our colleagues to discover and participate in what we're working on, and build the skills necessary to participate effectively.
-
- Code curation, procedural openness, and capacity building are things I intend to hammer on in my career as a scientific software developer; I believe that these meta-skills are what will allow us to create a rennaisance of scientific programming, rather than simply shoulder the overflow programming labor from our colleagues.
-
-
-[ssi][http://www.software.ac.uk/blog/2014-12-04-its-impossible-conduct-research-without-software-say-7-out-10-uk-researchers]
+[thread]: https://github.com/mozillascience/studyGroupLessons/issues/7
+[arxiv]: http://arxiv.org/abs/0906.5418
+[prc]: http://arxiv.org/find/grp_physics/1/jr:+AND+C+AND+Phys+Rev/0/1/0/all/0/1
+[jopg]: http://iopscience.iop.org/0954-3899/page/Why%20publish%20with%20JPhysG
+[data]: https://peerj.com/articles/175/
+[issue]: https://github.com/BillMills/blog/issues/2
+[swcite]: https://www.force11.org/group/software-citation-working-group
+[astro]: http://astronomy-software-index.github.io/2015-workshop/
+[zenodo]: https://guides.github.com/activities/citable-code/
+[lhc]: http://opendata.cern.ch/research
