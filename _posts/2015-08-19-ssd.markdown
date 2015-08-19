@@ -11,9 +11,7 @@ This is a crucial conversation for the open science movement. Without care, scie
 
 #### Code Curation
 
-One of the key meta-responsibilities of the scientific software developer is to provide their lab with an awareness of what code is already out there - in other words, to defeat the discoverability problem scientific software currently suffers from, by being able to provide our colleagues with informed recommendations on how to take advantage of the open source landscape. Without this awareness, we will continue to work in isolation, reinventing wheels in our separate labs and failing to leverage the power of the open source movement to accelerate and improve our coding. We can do this by creating a knowable landscape of relevant software within a field, and curating that knowledge within our institutions.
-
-A 'knowable landscape', in this case, means a multi-front conversation about what we're all hacking on at the moment. It consists of a few parts:
+One of the key meta-responsibilities of the scientific software developer is to provide their lab with an awareness of what code is already out there, and informed recommendations on how to take advantage of code already on the table. Without this awareness, we will continue to reinvent wheels in isolation, which is the antipattern I would most like to see smashed beyond repair. We can do that smashing, by having a loud conversation about what we're hacking on at the moment consisting of a few parts:
 
  - **Software Citation.** In order to break our code out of institutional silos, we need a way to discover it *in context* with the research it supports. That way, by staying abreast of the current literature in our fields (as one does in any case), we can create a virtuous circle of citation, discoverability, and reuse. 
  - **Conference talks & tracks.** In addition to citing our software after the fact, we need to start discussing it as it is developed, so we can help each other adapt early. Traditional software developers have a rich ecology of software conferences to discover what's new; scientific software developers need the same.
@@ -33,7 +31,7 @@ By keeping our colleagues involved in an open conversation around a development 
 
 I love node.js. I could pretend to make a bunch of technical or strategic arguments for its use, but honestly: I just think it's fun, and left to my own devices, I'll use it for a lot of my server-side needs, which is exactly what I did during my last postdoc. Trouble was, I was the only JavaScript developer in that lab, and when I left, all that work might as well have been advanced technology from a lost and inscrutable alien empire - interesting, possibly powerful, but unusable and unmaintainable in the hands it fell into. In order for our work as scientific software developers to reach its potential, we need to help support a program of capacity building in our labs and institutions. That way, our colleagues will be better able to use, adapt and maintain our code without our direct involvement - and so we can focus on building code *with* them, rather than building code *for* them. 
 
-> *... focus on building code with [our colleagues], rather than building code for them.*
+> *... focus on building code *with* [our colleagues], rather than building code *for* them.*
 
 In order to mitigate the around-the-block help request lineups many of us entertain, there are a few programs scientific software developers should involve themselves in:
 
