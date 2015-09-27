@@ -2,10 +2,10 @@ title: Build Things Together
 subtitle: Bill Mills
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-url: x
-baseurl: "http://billmills.github.io/blog"
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
+# url: x
+# baseurl: "http://billmills.github.io/blog"
+# paginate_path: "blog/page:num/"
+# permalink: blog/:title/
 
 markdown: redcarpet
 highlighter: pygments
