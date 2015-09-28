@@ -36,7 +36,7 @@ With that in mind, the way forward on my first project was clear: obviously what
 
 ### Simple on its Face (introducing Ultralight)
 
-Before people riot at [yet another JavaScript framework][nomorefwplz], I promise - this one is so simple it barely rises above the level of syntactic sugar. Ultralight does exactly two things, one of which it subcontracts to [mustache.js][mustache]: HTML templating, and query string parsing. Recall from my TRIUMF project, these were the two things I wanted to add to the project, and I had to do them client side. But the goal of Ultralight is to do these things in a way that requires the user to only write very simple HTML and JavaScript, where 'very simple' includes a knowledge of basic syntax, but excludes any knowledge of sophisticated tooling or design patterns. Let's take a tour.
+Before people riot at [yet another JavaScript framework][nomorefwplz], I promise - this one is so simple it barely rises above the level of syntactic sugar. [Ultralight][ultralight] does exactly two things, one of which it subcontracts to [mustache.js][mustache]: HTML templating, and query string parsing. Recall from my TRIUMF project, these were the two things I wanted to add to the project, and I had to do them client side. But the goal of Ultralight is to do these things in a way that requires the user to only write very simple HTML and JavaScript, where 'very simple' includes a knowledge of basic syntax, but excludes any knowledge of sophisticated tooling or design patterns. Let's take a tour.
 
 Here's a completely functional Ultralight page:
 
@@ -79,7 +79,7 @@ Ultralight also tries to make organizational best practices easy, by wrapping mu
 <h3>especially with cats</h3>
 ```
 
-Then in your main HTML file, this HTML fragment will be available for mustache to use per its usual syntax:
+Then in your main HTML file, that HTML fragment will be available for mustache to use per its usual syntax:
 
 ```
 {% raw %}
@@ -128,3 +128,4 @@ which, as promised, is all syntax, any element of which can be learned without r
 [mustache]: https://github.com/janl/mustache.js/
 [CSB]: http://griffincollaboration.github.io/beamCompanionExplorer/CSB.html?species=Ca&A=50
 [pixel]: http://billmills.github.io/ultralight/index.html?cats=1
+[ultralight]: https://github.com/BillMills/ultralight
