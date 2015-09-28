@@ -104,7 +104,7 @@ You'll also need to let Ultralight know you want that template:
 ...
 ```
 
-*et voila:* collaboration with cats is indeed awesome. Now, rather than writing giant piles of cut-and-pasted spaghetti HTML, the user can write modular, reusable HTML in nicely organized files *by writing nothing but HTML* - the somewhat hairy process of async loading a bunch of external files into unexecuted `<script>` tags is dealt with by Ultralight.
+*et voila:* collaboration with cats is indeed awesome. Now, rather than writing giant piles of cut-and-pasted spaghetti HTML, the user can write modular, reusable HTML in nicely organized files *by writing nothing but HTML* - the somewhat hairy process of async loading a bunch of external files into unexecuted `<script>` tags is dealt with by Ultralight. Huge thanks to the mustache team; that project does most of the heavy lifting here, and Ultralight itself is mostly just a bit of wrapping and sugar on top.
 
 ### Conclusion
 
