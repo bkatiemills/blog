@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ""
-subtitle: ""
+title: "Emergent Data Science"
+subtitle: "how ocean science is tackling open data"
 date: 2015-12-06
 permalink: IQuOD-data-science
 ---
