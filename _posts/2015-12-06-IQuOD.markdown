@@ -1,0 +1,46 @@
+---
+layout: post
+title: ""
+subtitle: ""
+date: 2015-12-06
+permalink: IQuOD-data-science
+---
+
+![Science: just ship it.](img/science-ship.jpg)
+
+I just returned from the latest meeting of the [International Quality Controlled Ocean Database (IQuOD) collaboration](iquod), a group of scientists seeking to set a gold standard for historical subsurface ocean data. The IQuOD dataset is intended to supply over a century of carefully annotated and validated open data to climate and hydrographic research; and while the meeting had protracted discussions about tanker bow heights, thermoclines, and other ocean-themed challenges, the problems were fundamentally those of data science. In what follows, I discuss a few of the challenges IQuOD is wrestling with from that perspective, because I think these themes are playing themselves out today in every field of inquiry; by sharing these stories, we have a chance to learn from one another as we propel open data to center stage.
+
+### The Ghost of Data Past
+
+One of the talks that stuck with me the most was from [John Gould][gould], a scientist from the UK's National Oceanography Centre, due to the offbeat problem it posed: how do we convince retired ocean scientists to come out of retirement, and help us fill in metadata on the expeditions they conducted decades ago? What we now call *metadata* was once just called *stories*, and though they now have a tremendous practical value, at the time they often went unrecorded. The collective wisdom at the meeting was that a full 50% of metadata was lost due to terse data formats used in the past, and for much of that metadata, the only chance for recovery is in the notes and often memories of people who were actually there. I'm optimistic that these scientists will see the need for this metadata and be happy to share their stories, but this highlights the historical twilight our data is subjected to; these conversations can only realistically stretch back to the 1960s or thereabouts - but IQuOD's target dataset extends a full century further back. Any field with a historical data record needs to think about capturing its stories as metadata now, before it's too late; and going forward, we need to remember that disk space is cheap: recording richly detailed metadata costs us precious little and saves us a major headache later.
+
+> *...a full 50% of metadata was lost due to terse data formats... recording richly detailed metadata costs us precious little and saves us a major headache later.*
+
+A closely related talk came from [Shoichi Kizu][kizu], who was examining historical ocean data from the Japanese Navy, recorded in the 20th Century up to WWII. The main problem Kizu presented was attempting to understand if the depths that measurements were taken at were actually measured, or if they were approximated and simply an artifact of the form the data was recorded on. Here too, the shape of our original recording media has had serious consequences for understanding that data years later. As Kizu pointed out, in some cases, many people died to collect this data - to lose it to poor record keeping would be tragic.
+
+### Intelligent Metadata
+
+One of IQuOD's main working groups focuses on *intelligent metadata*, which might be better understood as *inferred* metadata. Given the great swaths of metadata missing from historical records, is it possible to infer useful metadata from context? For example, there were a number of discussions of probe type used for a given record; given the year of the record (which is in this case a commonly available piece of metadata) and the depth the measurements go to, it's often possible to make a very good guess as to what device was used.
+
+From a data science perspective, the intelligent metadata discussion is a bread-and-butter machine learning problem, and I hope to see the IQuOD collaboration explore those possibilities in the near future. But I think this concept of inferential metadata has implications much broader than the ocean science community; to first order, everyone is missing all their metadata, and well-studied techniques for reconstructing missing metadata would be a huge prize across many fields.
+
+### Data Validation
+
+In the several centuries of ocean data available to us, there are plenty of duds, stemming from problems in collection to record keeping to archiving. The core goal of IQuOD is the quality control of this data; how do we flag rotten datasets so we can filter them out of analyses as necessary? My main contribution to IQuOD has been to develop the [pythonic infrastructure for their automatic data QC][autoqc], a modular parallelized battery of algorithms that check for known pathologies in the data. What I learned at the meeting, was that this was only the first of three planned data validation steps.
+
+Traditionally, the ocean science community (like most fields of study) has relied on expert judgment to decide whether a dataset is good or bad, and even as automatic quality control gains prominence, these judgment calls are seen as the last word on the viability of a dataset. The current thinking at IQuOD is to develop an automatic QC framework that produces as close to zero false negatives as possible, and then use human judgment to cut down on what will likely be a high false positive rate. Much as I hate to admit it, some of this human judgment will likely always be necessary; but I am trying to encourage the community to describe the things they are flagging as bad data by hand, in the hopes that we can capture as much of that judgment as possible algorithmically. I'm very nervous about the unavoidable biases introduced by even the most meticulous human examination; too often, what we see can have more of gravy than of grave, no matter the professionalism of the observer. And while an algorithm can be tuned inappropriately, that tuning can be made completely transparent, fully explained, and entirely repeatable or reversible. Sitting down with scientific software developers and working out what patterns we can capture in code not only improves the transparency and repeatability of our quality control, but it has the potential to dramatically lighten the load put on the experts; since the full hydrographic record numbers in the tens of millions of ocean observations, a heavy reliance on automatic QC will be unavoidable.
+
+Another interesting aspect to IQuOD's data validation strategy is a proposed citizen science project to crowdsource the problem, and see if the public can converge on good data quality decisions. Plenty of other projects have asked the public to examine pictures or plots to pick out patterns, so this seems like somewhat well-trodden ground at this point. One challenge we currently face, is infrastructural; [Zooniverse][zooniverse] provides an excellent platform for this, but will it be able to support a sophisticated enough interface to allow IQuOD to combine their public and expert QC infrastructures? Going the other way, the collaboration already has substantial investment in tools for doing expert QC, and it would be a shame to reinvent them - but as with most science infrastructure, design and aesthetics took a distant back seat to raw pragmatism. Where the right balance is is currently an open question.
+
+### Conclusion
+
+None of these problems are unique to ocean science. These are problems of missing metadata, to be filled in either referentially or inferentially; analytical automation, and how we can crystallize as much human judgment as possible in repeatable code; and communication with the public, and how we can fold them into our process in a way that is rewarding for them and feasible for us. As I told the IQuOD collaboration in [my talk][slides], I believe that their work has broad-reaching implications beyond the ocean science community; how IQuOD solves these problems will be a valuable data point for all of us as data science challenges emerge in our home fields, making them an important project to watch.
+
+![the IQuOD team in Hamburg, November 2015](img/IQuOD-team.jpg)
+
+[iquod]: http://www.iquod.org/
+[gould]: https://noc.ac.uk/people/wjg
+[kizu]: http://db.tohoku.ac.jp/whois/view?l=en&u=5547489e7215f198f4b1a3aca00760d0&c=8
+[autoqc]: https://github.com/IQuOD/AutoQC
+[zooniverse]: https://www.zooniverse.org/
+[slides]: http://billmills.github.io/IQUOD-Hamburg/slides/
