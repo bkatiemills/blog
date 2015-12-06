@@ -36,7 +36,7 @@ Another interesting aspect to IQuOD's data validation strategy is a proposed cit
 
 None of these problems are unique to ocean science. These are problems of missing metadata, to be filled in either referentially or inferentially; analytical automation, and how we can crystallize as much human judgment as possible in repeatable code; and communication with the public, and how we can fold them into our process in a way that is rewarding for them and feasible for us. As I told the IQuOD collaboration in [my talk][slides], I believe that their work has broad-reaching implications beyond the ocean science community; how IQuOD solves these problems will be a valuable data point for all of us as data science challenges emerge in our home fields, making them an important project to watch.
 
-![the IQuOD team in Hamburg, November 2015]({{ site.url }}/img/IQuOD-team.jpg)
+![the IQuOD team in Hamburg, November 2015]({{ site.baseurl }}/img/IQuOD-team.jpg)
 
 [iquod]: http://www.iquod.org/
 [gould]: https://noc.ac.uk/people/wjg
