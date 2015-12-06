@@ -6,7 +6,7 @@ date: 2015-12-06
 permalink: IQuOD-data-science
 ---
 
-![Science: just ship it.](img/science-ship.jpg)
+![Science: just ship it.]({{ site.url }}/img/science-ship.jpg)
 
 I just returned from the latest meeting of the [International Quality Controlled Ocean Database (IQuOD) collaboration](iquod), a group of scientists seeking to set a gold standard for historical subsurface ocean data. The IQuOD dataset is intended to supply over a century of carefully annotated and validated open data to climate and hydrographic research; and while the meeting had protracted discussions about tanker bow heights, thermoclines, and other ocean-themed challenges, the problems were fundamentally those of data science. In what follows, I discuss a few of the challenges IQuOD is wrestling with from that perspective, because I think these themes are playing themselves out today in every field of inquiry; by sharing these stories, we have a chance to learn from one another as we propel open data to center stage.
 
@@ -36,7 +36,7 @@ Another interesting aspect to IQuOD's data validation strategy is a proposed cit
 
 None of these problems are unique to ocean science. These are problems of missing metadata, to be filled in either referentially or inferentially; analytical automation, and how we can crystallize as much human judgment as possible in repeatable code; and communication with the public, and how we can fold them into our process in a way that is rewarding for them and feasible for us. As I told the IQuOD collaboration in [my talk][slides], I believe that their work has broad-reaching implications beyond the ocean science community; how IQuOD solves these problems will be a valuable data point for all of us as data science challenges emerge in our home fields, making them an important project to watch.
 
-![the IQuOD team in Hamburg, November 2015](img/IQuOD-team.jpg)
+![the IQuOD team in Hamburg, November 2015]({{ site.url }}/img/IQuOD-team.jpg)
 
 [iquod]: http://www.iquod.org/
 [gould]: https://noc.ac.uk/people/wjg
