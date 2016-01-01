@@ -8,13 +8,13 @@ permalink: full-stack
 
 ### Introduction
 
-After my recent [introduction to Docker + Rocker][rocker] class at UBC's [Mozilla Study Group][ubcsg], one of the students asked a question I think a lot of people, from newcomers to open science veterans, are struggling with:
+After my recent [introduction to Docker + Rocker][rocker] at UBC's [Mozilla Study Group][ubcsg], one of the students asked a question I think a lot of people, from newcomers to open science veterans, are struggling with:
 
 *How do we put all this infrastructure together in our real research?*
 
 In time, I think we'll look back on the last few years as an era of huge infrastructural strides for reproducible research on the web - but now that we've had a few years to come up with all these tools and services, it's time to piece it all together into a clear, simple toolkit, with guidelines on standards and usage. In this post I present my standard stack - the tools I try to use to ensure my work as a scientific software developer is as reproducible, reusable and participatory as possible. To do so, I'll walk you through a toy example employing all the tools in an imaginary study of the ice cream flavor preferences of common housecats; think of this as a minimum working example of my reproducible scientific stack.
 
-When reading this tutorial, keep in mind: these are standards to *shoot for*. I rarely (if ever) actually pull off the full stack depicted here, since life and grant cycles invariably get in the way. Think of this as a standard to work towards, and remember - if you include even a subset of these ideas in your work, you're doing great.
+When reading this tutorial, keep in mind: these are standards to *shoot for*. I rarely (if ever) actually pull off the full stack depicted here, since life and grant cycles invariably get in the way - and in my professional case, there's just no good way to distribute petabytes of data (yet). Think of this as a standard to work towards, and remember - if you include even a subset of these ideas in your work, you're doing great.
 
 
 ### The Lineup
@@ -22,7 +22,7 @@ When reading this tutorial, keep in mind: these are standards to *shoot for*. I 
 My A-team consists of:
 
  - **GitHub**, for sharing code; see the [cat-icecream repo][cat-icecream-git].
- - **Docker Hub**, for sharing dependencies; see the [cat-icecream image][cat-icecream-docker].
+ - **Docker Hub**, for sharing dependencies; see the [cat-icecream container][cat-icecream-docker].
  - **FigShare**, for sharing data; see the [cat-icecream data][cat-icecream-data].
  - **Travis CI**, for testing my code
  - **Zenodo**, for minting DOIs for my code
@@ -63,7 +63,7 @@ A list of links to other key resources, at a minimum the data and docker reposit
 
 **Estimated reading time: as short as possible**
 
-The Running Instructions are perhaps the most important part of your readme - this is where you walk people through the whole process of installing your software and dependencies, getting your data, and reproducing your results. As in `cat-icecream`, I like to indicate what software people will need installed to follow the instructions in this section (often just `git` and `docker`, if all your analysis is encapsulated in your Docker image). These dependencies are followed by explicit, step by step instructions that lead the user from downloading all the things they'll need, to setting up their environment, to actually running the analysis. `cat-icecream` is pretty simple, so a few bullet points is all it took; for more sophisticated analyses, you'll want to produce a [shell script][swc-shell] or even a [Makefile][makefiles] for helping manage this process.
+The Running Instructions are perhaps the most important part of your readme - this is where you walk people through the whole process of installing your software and dependencies, getting your data, and reproducing your results. As in `cat-icecream`, I like to indicate what software people will need installed to follow the instructions in this section (often just `git` and `docker`, if all your analysis is encapsulated in your Docker container). These dependencies are followed by explicit, step by step instructions that lead the user from downloading all the things they'll need, to setting up their environment, to actually running the analysis. `cat-icecream` is pretty simple, so a few bullet points is all it took; for more sophisticated analyses, you'll want to produce a [shell script][swc-shell] or even a [Makefile][makefiles] for helping manage this process.
 
 As advertised at the start of this section, the real strength of GitHub is in its ability to support collaboration on code. Much has been written about techniques for creating great collaborations on GitHub; I recommend the [Working Open Guide][wog] from my former colleagues at Mozilla as a gem of these distilled strategies. But, before worrying too much about how to manufacture collaboration, *focus on creating users first* - if people can actually run your software, they will start having their own ideas about it, and feel inspired to get involved and collaborate. After all, [most long term contributors to open source projects are users first][zm] - making sure people actually get to the 'user' stage is the point of the 'Running Instructions' section in your readme.
 
@@ -107,7 +107,7 @@ Luckily, this doesn't have to be hard. The Internet overflows with arguments abo
 
 #### GitHub Last Word
 
-As repeated a whole bunch of times above, GitHub is a platform for collaboration above all else. The single most common mistake I see scientists making with GitHub, is when they say *'I'm totally going to put my code on GitHub... eventually, after I clean it up'*. Do not fall into this trap; push your code now. There is no such thing as 'clean' code - all code, *all code*, is the authors' best stab at pulling off what they were trying for. It *all* has bugs, it *all* has quirks, and *none* of that makes it a lesser work. It's normal to feel nervous putting everything out there when you aren't used to it yet - but as a scientific software developer, I have *never* looked at a project on GitHub and thought less of its authors; the entire world is a work in progress, and anyone who has ever written a single line of code knows that. By pushing code early and often, we give those collaborators a chance to get in on a project on the ground floor, before its so giant and mature that participating seems overwhelming.
+As repeated a whole bunch of times above, GitHub is a platform for collaboration above all else. The single most common mistake I see scientists making with GitHub, is when they say *'I'm totally going to put my code on GitHub... eventually, after I clean it up'*. Do not fall into this trap; push your code now. There is no such thing as 'clean' code - all code, *all code*, is the authors' best stab at pulling off what they were trying for. It *all* has bugs, it *all* has quirks, and *none* of that makes it a lesser work. It's normal to feel nervous putting everything out there when you aren't used to it yet - but as a scientific software developer, I have *never* looked at a project on GitHub and thought less of its authors; the entire world is a work in progress, and anyone who has ever written a single line of code knows that. By pushing code early and often, we give those collaborators a chance to get in on a project on the ground floor, before it becomes so giant and mature that participating seems overwhelming.
 
 > *The single most common mistake I see scientists making with GitHub, is when they say 'I'm totally going to put my code on GitHub... eventually'... Do not fall into this trap; push your code now.*
 
@@ -122,8 +122,8 @@ Put really simply, Docker is to dependencies what Git is to code. Docker lets us
 I'll leave an introduction to actual Docker usage to the background lessons linked at the top of this section. The [cat-icecream example on Dockerhub][cat-icecream-docker] doesn't have much to it, but there are some non-obvious best practices from its creation to note:
 
  - **Creating a Dockerfile** is discussed in my intro to Rocker and on a million other Docker tutorials on the web. Throw this into the top level of your GitHub repository for safe keeping, so that the container can be regenerated and updated in future. Check out [cat-icecream's Dockerfile][cat-icecream-dockerfile] here.
- - **Use Docker Hub**. This is probably the easiest part of using Docker; once you've made your container, [make an account on Docker Hub][dockerhub], and then do a `docker push myname/containername`, and you're good to go. Add some comments to the resulting repository page (particularly linking back to the GitHub repo), but feel free to leave the detailed instructions and discussions for the `README` discussed above, on GitHub.
- - **Separate code, data and dependencies**. Docker is for encapsulating your operating system and dependencies, *not* your code and data. All kinds of funny business can happen with Docker caching if you try to add static files to your image; of course it can be done, but I recommend mounting an external directory containing you code and data instead. There's an example of this in `cat-icecream`'s running instructions in that repo's `README`; from within the root directory of your git repo, do:
+ - **Use Docker Hub**. This is probably the easiest part of using Docker; once you've made your container (and named it `myname/containername`, where `myname` is your Docker Hub user name), [make an account on Docker Hub][dockerhub], and then do a `docker push myname/containername`, and you're good to go. Add some comments to the resulting repository page (particularly linking back to the GitHub repo), but feel free to leave the detailed instructions and discussions for the `README` discussed above, on GitHub.
+ - **Separate code, data and dependencies**. Docker is for encapsulating your operating system and dependencies, *not* your code and data. All kinds of funny business can happen with Docker caching if you try to add static files to your container; of course it can be done, but I recommend mounting an external directory containing your code and data instead. There's an example of this in `cat-icecream`'s running instructions in that repo's `README`; from within the root directory of your git repo, do:
 
 ```
 docker run -v $PWD:/cat-icecream -i -t billmills/cat-icecream /bin/bash  
