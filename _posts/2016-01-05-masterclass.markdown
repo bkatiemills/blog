@@ -153,7 +153,7 @@ The background links above have detailed introductions to the mechanics of unit 
 
 Luckily, setting up continuous integration with Travis is pretty easy, now that we already created a Docker container to run our code in; Travis can grab that container from Docker Hub, our code from GitHub, and run our tests automatically every time we push to our GitHub repo. To get started, follow the three steps Travis prescribes, starting from your Travis homepage, `https://travis-ci.org/profile/your-user-name`:
 
-![travis](img/travis.png)
+![travis](https://raw.githubusercontent.com/BillMills/blog/gh-pages/img/travis.png)
 
 For creating your `.travis.yml` in that middle step, look at the [cat-icecream .travis.yml][travisyml] example (notice the `$PWD` mounting trick again for Docker in the last line - this is crucial here, since Travis automatically clones new code from GitHub when you push it, and fetches the Docker container separately; by mounting one inside the other, your new code is available in your Docker container). You can copy this almost exactly for any similarly arranged project. You'll have to change `billmills/cat-icecream` to the name of your Docker container, and the name of the `/cat-icecream` directory in the last line to something more appropriate for your project, and *that's it* - Travis will take care of the rest, and it will provide you with this nifty badge that indicates if your code is working or not:
 
@@ -169,7 +169,7 @@ The software developer in me would like to call that a wrap - but unfortunately,
 
 A few years ago, GitHub partnered with Zenodo to offer exactly this service; see [GitHub's instructions on how to stamp a release with a DOI][code-citation]. Once you've stamped your release with a DOI, be sure to add the badge (or at least the DOI number) to a table at the top of your `README` in yout GitHub repo along with the corresponding release version number, like this:
 
-![doi-table](img/doi-table.png)
+![doi-table](https://raw.githubusercontent.com/BillMills/blog/gh-pages/img/doi-table.png)
 
 Since your code may evolve after your paper is published or your project is complete, readers of the paper will need to know how to get back to the release that paper corresponds to; citing the correct DOI in that paper is sufficient, but it never hurts to reiterate the correspondence between DOIs and releases all in one place.
 
