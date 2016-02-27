@@ -2,8 +2,8 @@ title: Build Things Together
 subtitle: Bill Mills
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-url: x
-baseurl: "http://billmills.github.io/blog"
+#url: x
+#baseurl: "http://billmills.github.io/blog"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -25,3 +25,4 @@ social:
    email: mills.wj@gmail.com
 
 google_analytics: "UA-58263416-1"
+future: true
