@@ -64,7 +64,7 @@ While delimited text is probably the simplest strategy to understand, its appare
  - **Have a unique identifier for each line**; data science nerds call this a *primary key*, and it is a column whose value uniquely identifies the row. Common examples are dates and times, serial numbers, or even simple row numbers. Note that this unique identifier might be formed by the combination of multiple columns, such as in the example of date and time. Why? See below.
  - **Use a consistent delimiter, including whitespace**. Avoid the temptation to add variable amounts of whitespace after your delimiter; this is often done to make columns line up when looking at the raw text file by eye. It is far more important that your data be legible to a computer than legible to your eyes, since looking at data by eye is a great way to get false impressions about it, particularly as it grows in size. If you insist on looking at your data as a table, RStudio will happily render it as one.
 
-> It is more important that your data be legible to a computer than legible to your eyes.
+> It is more important that your data be legible to a computer than legible to you.
 
 Speaking of null characters, a regular CSV might make sense if it looks like this:
 
@@ -132,12 +132,123 @@ bird_number,tree_number,bird_type,bird_color
 
 We no longer repeat the tree information for every bird, saving us space and speeding up our analysis. Instead, we use the unique identifier `tree_number` as a shorthand in the `birds.csv` table to associate each bird with the tree we found it in. When we use the unique identifier from one table in another in this way, the data science nerds call this a *foreign key*; this logic underlies basic database construction and usage, but it works exactly the same way when recording data in simple files.
 
+### 2. Hierarchical Data
 
+**Patron saints:** JSON, HDF5  
+**Strengths:** Flexible, web-ready, easy to represent complicated structures  
+**Weaknesses:** Files can be either large (JSON) or non-human-readable (HDF5)
 
+#### JSON
 
+At the end of the last section, we encountered some bird data that didn't fit nicely into a single table in a single file. We explored how to solve this by introducing 'primary keys' and 'foreign keys'; this is a good solution, but it can get awful complicated, awful fast. A simpler way to encode *hierarchical data*, or data where some facts naturally 'belong' to other facts (like birds belonging to a particular tree), is via JSON.
 
+JSON is [fully specified here](http://www.json.org/), but for those who find those flow charts as inscrutable as I do, let's walk through an example. A simple JSON object might look like:
 
+```
+{
+  "myNumber": 0
+}
+```
 
+Wrap the whole thing in `{}`, give each variable a name between `""`, and assign a value after a `:`. `myNumber` in this example is called a *key*, and `0` is its *value* - that's why JSON belongs to a broader class of things called *key-values stores*, common in many languages (pythonistas in the audience will recognize this as identical to a pythonic dictionary). We can also store strings:
+
+```
+{
+  "myNumber": 0,
+  "myWord": "bananas"
+}
+```
+
+Note the `,` that appeared after the former line; JSON also holds arrays (*lists* in some languages):
+
+```
+{
+  "myNumber": 0,
+  "myWord": "bananas",
+  "someStuff": [22, "calico"]
+}
+```
+
+Note that JSON arrays can contain mixed data types. But where this actually gets useful, is when we note that JSON objects can contain *other JSON objects* as values:
+
+```
+{
+  "myNumber": 0,
+  "myWord": "bananas",
+  "someStuff": [22, "calico"],
+  "cats": {
+    "Pika": {
+      "color": "tortoise",
+      "weight": 5
+    },
+    "Pixel": {
+      "color": "black",
+      "weight": 3.4
+    }
+  }
+}
+```
+
+We can keep nesting JSON in JSON recursively forever, for all the data we want to record as 'belonging to' another piece of data. Our birds example from the last section might look like:
+
+```
+{
+  "trees": [
+    {
+      "type": "poplar",
+      "height": 6,
+      "residents": [
+        {
+          "species": "parrot",
+          "color": "red"
+        },
+        {
+          "species": "cockateel",
+          "color": "blue"
+        },
+        {
+          "species": "crow",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "type": "spruce",
+      "height": 10,
+      "residents": [
+        {
+          "species": "chickadee",
+          "color": "brown"
+        },
+        {
+          "species": "crow",
+          "color": "black"
+        },
+        {
+          "species": "crow",
+          "color": "black"
+        },
+        {
+          "species": "crow",
+          "color": "black"
+        }
+      ]
+    }
+  ]
+}
+```
+
+(I snuck in an example there of how JSON objects are valid members of arrays, too, as in the `"residents"` key). JSON has a number of advantages:
+
+ - **The web lives on JSON.** If you want to make a moderate amount of data openly usable on the web, particularly for visualizations or interactive tools, JSON may well be your best choice. This is because it's very easy for web apps to consume JSON; the 'JS' in 'JSON' stands for 'JavaScript', which is where the standard emerged from. JSON powers all kinds of open data, like [the weather in London](http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=44db6a862fba0b067b1930da0d769e98), [who is studying cats using R on GitHub](https://api.github.com/search/repositories?q=cats+language:R&sort=stars&order=desc), or [where you can rent a bike in NYC](http://www.citibikenyc.com/stations/json/).
+ - **Broad language support**: most every language has pre-made packages for both reading and writing JSON. See the `json` [package in Python](https://docs.python.org/2/library/json.html), `jsonlite` [in R](https://cran.r-project.org/web/packages/jsonlite/index.html), and many others.
+ - **Easy to remix**: The nestable nature of JSON makes it really easy to combine datasets; if you have two blobs of JSON, you can put one inside the other and be guaranteed to still have valid JSON. Also note the absence of a rectangular format lets us have implicit `NULL`s like the long form tables discussed above, so we don't have to worry that adding a key to one thing will create a lot of blank spots in all similar things, like might happen when adding a new column to a table.
+ - **Easy to add metadata**: I want to write a whole post about metadata, but one quick comment today: *where the heck are you supposed to put your metadata in a csv*, or any data frame-like object? See [this issue over at Pandas](https://github.com/pydata/pandas/issues/2485) for what happens when you stare into this abyss too long. JSON blissfully eliminates this problem: feel free to tack on a `"metadata"` key, and assign is a JSON object with everything you need to understand the associated data. Actually, this strategy is exactly what sits behind [JSON-LD](http://json-ld.org/), an exciting strategy for metadata that I will dig deeper into in future.
+ - **Easy to build on top of**: As long as you can avoid getting lost in bracket hell (which we all do from time to time), JSON is pretty simple and unopinionated, which makes it a good candidate for building standard data formats on top of. My favorite example of this is [GeoJSON](http://geojson.org/), a specification for encoding map data in JSON. GeoJSON has become so successful and widespread, that there is a huge ecology of tools out there that will consume it to do neat things like magic; GitHub, for example, will take [plain GeoJSON in a repo](https://raw.githubusercontent.com/mozillascience/studyGroupLessons/master/whereWeAre.geojson) and automatically render it into [a lovely map](https://github.com/mozillascience/studyGroupLessons/blob/master/whereWeAre.geojson).
+
+#### HDF5
+
+JSON is great for human scales of data. But like any plain text format, things are going to become glacially slow when we begin to leave the gigabyte scale and start to approach terabytes of data. For more advanced users, HDF5 might be the hierarchical data format du jour; unlike JSON, HDF5 stores its data in binary, non-human readable format, helping to keep storage manageable, and enforces a bit more strictness on how data is represented (tables, of which there can be many, are strictly homogeneous in type, and this multiple-table paradigm makes it conceptually similar to the birds example from the end of the CSV section above, or to SQL-like database usage, if that's familiar). HDF5 excels at subsetting and random-access of data, meaning if you want to quickly find and grab a small chunk of a large dataset, this is the format for you.
 
 
 
@@ -150,3 +261,6 @@ We no longer repeat the tree information for every bird, saving us space and spe
   - bit packing: flexible, self-describing
  - decision flow chart
  - last word: respect format orthodoxy
+
+odds and ends:
+ - 'self describing data'
