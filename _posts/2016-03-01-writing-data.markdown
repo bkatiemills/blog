@@ -94,7 +94,7 @@ Pika,coat,tortoise
 Pika,likes_string,TRUE
 ```
 
-Long format is characterized by writing one measurement per line (with many lines for a single subject), while the *wide format* we began with writes one subject per line (with many measurements on that line). Long format has the advantage of making those missing values implicit, avoiding blowing up our file sizes on disk or our data frames in memory during analysis. It's also our first example of why those unique identifiers matter; take off the `name` column above, and there's no longer any way to tell what pieces of data belong to the same cat.
+Long format is characterized by writing one measurement per line (with many lines for a single subject), while the *wide format* we began with writes one subject per line (with many measurements on that line). Long format has the advantage of making those missing values implicit, avoiding blowing up our file sizes on disk or our data frames in memory during analysis. It's also our first example of why those unique identifiers matter; take off the `name` column above, and there's no longer any way to tell which pieces of data belong to the same cat.
 
 One of the places where simple delimited text files start to get hairy is with datasets that have a variable amount of measurements. For example, what if you're into recording information about groups of things *and* information about each member of that group - say the group of birds in a given tree, and something about each individual bird. One strategy is to make rows for the smallest unit of things you're measuring (in this case, each bird):
 
@@ -130,7 +130,7 @@ bird_number,tree_number,bird_type,bird_color
 6,1,crow,black
 ```
 
-We no longer repeat the tree information for every bird, saving us space and speeding up our analysis. Instead, we use the unique identifier `tree_number` as a shorthand in the `birds.csv` table to associate each bird with the tree we found it in. When we use the unique identifier from one table in another in this way, the data science nerds call this a *foreign key*; this logic underlies basic database construction and usage, but it works exactly the same way when recording data in simple files.
+We no longer repeat the tree information for every bird, saving us space and speeding up our analysis. Instead, we use the unique identifier `tree_number` as a shorthand in the `birds.csv` table to associate each bird with the tree we found it in. When we use the unique identifier from one table in another in this way, we call this a *foreign key*; this logic underlies basic database construction and usage, but it works exactly the same way when recording data in simple files.
 
 ### 2. Hierarchical Data
 
@@ -169,7 +169,7 @@ Note the `,` that appeared after the former line; JSON also holds arrays (*lists
 }
 ```
 
-Note that JSON arrays can contain mixed data types. But where this actually gets useful, is when we note that JSON objects can contain *other JSON objects* as values:
+Note that JSON arrays can contain mixed data types, like a list in R. But where this actually gets useful, is when we note that JSON objects can contain *other JSON objects* as values:
 
 ```
 {
@@ -243,12 +243,117 @@ We can keep nesting JSON in JSON recursively forever, for all the data we want t
  - **The web lives on JSON.** If you want to make a moderate amount of data openly usable on the web, particularly for visualizations or interactive tools, JSON may well be your best choice. This is because it's very easy for web apps to consume JSON; the 'JS' in 'JSON' stands for 'JavaScript', which is where the standard emerged from. JSON powers all kinds of open data, like [the weather in London](http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=44db6a862fba0b067b1930da0d769e98), [who is studying cats using R on GitHub](https://api.github.com/search/repositories?q=cats+language:R&sort=stars&order=desc), or [where you can rent a bike in NYC](http://www.citibikenyc.com/stations/json/).
  - **Broad language support**: most every language has pre-made packages for both reading and writing JSON. See the `json` [package in Python](https://docs.python.org/2/library/json.html), `jsonlite` [in R](https://cran.r-project.org/web/packages/jsonlite/index.html), and many others.
  - **Easy to remix**: The nestable nature of JSON makes it really easy to combine datasets; if you have two blobs of JSON, you can put one inside the other and be guaranteed to still have valid JSON. Also note the absence of a rectangular format lets us have implicit `NULL`s like the long form tables discussed above, so we don't have to worry that adding a key to one thing will create a lot of blank spots in all similar things, like might happen when adding a new column to a table.
- - **Easy to add metadata**: I want to write a whole post about metadata, but one quick comment today: *where the heck are you supposed to put your metadata in a csv*, or any data frame-like object? See [this issue over at Pandas](https://github.com/pydata/pandas/issues/2485) for what happens when you stare into this abyss too long. JSON blissfully eliminates this problem: feel free to tack on a `"metadata"` key, and assign is a JSON object with everything you need to understand the associated data. Actually, this strategy is exactly what sits behind [JSON-LD](http://json-ld.org/), an exciting strategy for metadata that I will dig deeper into in future.
+ - **Easy to add metadata**: I want to write a whole post about metadata, but one quick comment today: *where the heck are you supposed to put your metadata in a csv*, or any data frame-like object? (Best current answer: see the [CSVY](http://csvy.org/) spec, which seeks to add yaml frontmatter to CSV files - though this still doesn't solve the in-memory side of the problem - see [this issue over at Pandas](https://github.com/pydata/pandas/issues/2485) for what happens when you stare into this abyss too long). JSON blissfully eliminates this problem: feel free to tack on a `"metadata"` key, and assign it a JSON object with everything you need to understand the associated data. Actually, this strategy is exactly what sits behind [JSON-LD](http://json-ld.org/), an exciting strategy for metadata that I will dig deeper into in future.
  - **Easy to build on top of**: As long as you can avoid getting lost in bracket hell (which we all do from time to time), JSON is pretty simple and unopinionated, which makes it a good candidate for building standard data formats on top of. My favorite example of this is [GeoJSON](http://geojson.org/), a specification for encoding map data in JSON. GeoJSON has become so successful and widespread, that there is a huge ecology of tools out there that will consume it to do neat things like magic; GitHub, for example, will take [plain GeoJSON in a repo](https://raw.githubusercontent.com/mozillascience/studyGroupLessons/master/whereWeAre.geojson) and automatically render it into [a lovely map](https://github.com/mozillascience/studyGroupLessons/blob/master/whereWeAre.geojson).
+
+If you're meeting JSON for the first time today (or even if you're not), take advantage of automatic JSON proofreading tools like [this one](http://jsonlint.com/), to help make sure you got all those brackets and commas in the right place.
 
 #### HDF5
 
 JSON is great for human scales of data. But like any plain text format, things are going to become glacially slow when we begin to leave the gigabyte scale and start to approach terabytes of data. For more advanced users, HDF5 might be the hierarchical data format du jour; unlike JSON, HDF5 stores its data in binary, non-human readable format, helping to keep storage manageable, and enforces a bit more strictness on how data is represented (tables, of which there can be many, are strictly homogeneous in type, and this multiple-table paradigm makes it conceptually similar to the birds example from the end of the CSV section above, or to SQL-like database usage, if that's familiar). HDF5 excels at subsetting and random-access of data, meaning if you want to quickly find and grab a small chunk of a large dataset, this is the format for you.
+
+
+### 3. Structured Packings
+
+**Patron saints:** [World Ocean Database ASCII format](http://data.nodc.noaa.gov/woa/WOD/DOC/wodreadme.pdf), [GRIFFIN event format](https://rawgit.com/wiki/GriffinCollaboration/GRSISort/technical-docs/GRIFFIN_Event_Format.pdf)
+**Strengths:** compact, flexible, appropriate for large data in unpredictable circumstances
+**Weaknesses:** difficult or impossible to read by eye, corruptable even in cases of minor data loss.
+
+#### Character Stanzas
+
+One of the nice things about JSON was how easily flexible it is - it can accommodate variable amounts and types of data from subject to subject in a way that a rigid CSV struggles with. Unfortunately, JSON can get really *big* - like long form tables, every time we want to talk about a variable, we have to list that variable's name as a key, which could blow up the size of our data real quick. HDF5 is much more compact, but is totally unreadable to humans. One middle road is to encode our data in a way that is conceptually similar to JSON, but in a much terser format that I call a *character stanza*.
+
+Character stanzas trim the fat of JSON by preceding each piece of data with an indication of how many characters compose that data. So instead of saying
+
+```
+"species": "chickadee"
+```
+
+The same information might appear in the file like
+
+```
+9chickadee
+```
+
+telling me that to get the next piece of data, I need to read the next 9 characters, which come out to `chickadee`. But this alone isn't enough; character stanzas also need a specifying document to go with them that explain how big the variable-size-indicators are (how did I know to only read the `9` in the last example? What if it was followed by numerical data instead of a word?), and what order the variables come in. For the bird example above, I might specify my format as follows:
+
+ - Variable size indicators are always one character long
+ - Variables in order:
+  - number of trees
+  - sub-stanza for each tree, where an individual tree stanza looks like:
+    - type
+    - height
+    - number of residents
+    - sub-stanza for each resident, where an individual resident stanza looks like:
+      - species
+      - color
+
+With that specification in hand, the final JSON example above becomes:
+
+```
+126poplar16136parrot3red9cockateel4blue4crow5black6spruce210149chickadee5brown4
+crow5black4crow5black4crow5black
+```
+
+All the same information is present, and the structure has *almost* as much flexibility, but is much smaller. I say almost as much flexibility, since while it's easy to have variable numbers of trees and birds, it isn't such a simple matter to jam a new or extra variable in somewhere, since it relies so heavily on its rigid specifying description in order to decode it. Which exposes one key weakness of the character stanza - if even a single character is lost in the string above, the whole thing (or at least everything after the missing character) becomes unreadably corrupt. One way around this would be to put 'waypoints' in the encoding, that can allow you to pick up reading after a corrupted stretch. For example, instead of explicitly encoding the number of trees, we could start each new tree with a `>`:
+
+```
+>6poplar16136parrot3red9cockateel4blue4crow5black>6spruce210149chickadee5brown4
+crow5black4crow5black4crow5black
+```
+
+Then if something goes awry, we can fast-forward to the next `>` and carry on reading.
+
+If you're in a situation where you're unlikely to be dropping characters here and there, character stanzas can be a nice balance between keeping things small, flexible, and (just barely) human readable; the unpackers for these sorts of data formats tend to be simple compared to something like an HDF5 encoder, which makes this an approachable option for people with medium-sized data. The first place I encountered a character stanza approach was in the [World Ocean Databas](https://www.nodc.noaa.gov/OC5/WOD/pr_wod.html), a collection of historical climatological ocean measurements. You can see their character stanza specification in chapter 2 of [their docs](http://data.nodc.noaa.gov/woa/WOD/DOC/wodreadme.pdf), and check out [the decoder](https://github.com/IQuOD/wodpy) the team I work with wrote for it.
+
+#### Bit Packing
+
+Before we dove into our gallery of data format archetypes, I mentioned that natural structure was a key consideration in choosing a format. CSVs make sense for situations with many subjects with the same information recorded about each of them, but fall apart when variable observations or inconsistent treatments are made or applied. JSON is more flexible, but not very memory efficient, which will start to cause pain for large data sets; character stanzas are a bit more compact, but impose a rigid ordering of data. The last exhibit in our gallery for this post is a less-rigid and less-fragile nearest-neighbor of the character stanza, the *bit packing*.
+
+A bit packing scheme assigns meaning to individual bits in short sequences called 'words', and assembles a few words into an 'event'. Usually, words will come packed in regular, convenient-sized chunks, like a 32-bit integer; the exact size of a chunk is up to you, but since this data format really shines for high-data-rate experiments like [GRIFFIN](http://griffincollaboration.github.io/griffin-website/index.html), it's usually useful to pick a size high performance languages like C like to deal in (hence the 32-bit int), and can conveniently create arrays of for representing events. Like the character stanza, an encoding specification will describe what each bit in a word means; a good bit packing, however, ups the ante by making itself as *self describing* as possible, meaning that each word will typically carry some information to tell you what kind of word it is - like a little label. For example, I might have a toy specification like (where the `0x...` notation indicates *hexadecimal notation*, each character of which conveniently represents 4 bits):
+
+ - Header words (typically used for metadata):
+   - bits 0-3: 0xF
+   - bits 4-7: number of particles in event
+   - bits 8-31: time [ms since start of experiment]
+
+ - Electrons:
+   - bits 0-3: 0x0
+   - bits 4-31: energy
+
+ - Photons:
+   - bits 0-3: 0x1
+   - bits 4-31: polarization
+
+Now that I've got a specification, I can encode an observation of say, 2 electrons and a photon like:
+
+```
+0xF348AD01 0x0ADF6319 0x102F4C71 0x0EEF7819
+```
+
+Nevermind most of the gibberish - we can see right away that there's a header word first (because it starts with `0xF`), followed by an electron (since it starts with `0x0`), followed by a photon (starts with `0x1`), and finally another electron (`0x0` again). By using a couple of bits to form a flag to indicate what sort of word each one is, we give ourselves lots of waypoints in the data stream to confirm how we should be unpacking the following bits - like the `>` in the character stanza above. In actuality, character stanzas and bit packings are conceptually the same thing - but bit packings turn the priorities of terseness and self-description up to 11.
+
+One place a good bit packing can really deliver is in an experimental situation where data is being generated by a random process, taking different forms or contexts at each observation. In a nuclear decay experiment, I have no idea what I'm going to see next - will it be an electron? A photon? One of the other things I can detect? I can't build order into my data stream like I would have liked for a character stanza with few waypoints, because my data doesn't *have* an order, it won't make sense in a table because I'm measuring completely different things for different species, and at 200 TB of data produced by GRIFFIN every *week*, JSON is right out. A bit packing lets us make little real-time squirts of highly compact, flexible data that we can contextualize and decode later.
+
+## Last Word
+
+We've encountered some of the greatest hits of data encoding in this post: delimited, hierarchical and structured, and seen a few different realizations of each. If you're feeling a bit overwhelmed, here's a handy flowchart that I hope will get most people there, most of the time:
+
+YUP GOTTA MAKE PITCHERS
+
+Regardless of which of these formats (or others!) you settle on, listen to Shakespeare:
+
+> This above all: to thine own format be true    
+> And it must follow as the , the }    
+> Thou canst not be false to any data.    
+
+Strictly, uncompromisingly, *no exceptions ever*, respect the orthodoxy of your data format - this is at least as important as any choice you make when writing data.
+
+
+
+
+
+
 
 
 
@@ -261,6 +366,3 @@ JSON is great for human scales of data. But like any plain text format, things a
   - bit packing: flexible, self-describing
  - decision flow chart
  - last word: respect format orthodoxy
-
-odds and ends:
- - 'self describing data'
