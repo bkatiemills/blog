@@ -112,6 +112,7 @@ tree_number,tree_type,tree_height,bird_number,bird_type,bird_color
 I guess this is ok, but we had to repeat ourselves *a lot* - the information for a given tree is copied for each bird in that tree. This is going to make our data unnecessarily large and slow to work with (and kind of hard to make sense of by eye). Instead, what if we had two files:
 
 `trees.csv`:
+
 ```
 tree_number,tree_type,tree_height
 0,poplar,6
@@ -119,6 +120,7 @@ tree_number,tree_type,tree_height
 ```
 
 and `birds.csv`:  
+
 ```
 bird_number,tree_number,bird_type,bird_color
 0,0,parrot,red
