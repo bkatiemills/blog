@@ -2,7 +2,7 @@
 layout: post
 title: "Full Stack Science"
 subtitle: "a guide to open science infrastructure"
-date: 2016-01-05
+date: 2016-01-01
 permalink: full-stack
 ---
 
