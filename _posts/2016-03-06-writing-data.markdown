@@ -339,7 +339,7 @@ One place a good bit packing can really deliver is in encoding data on the fly i
 
 We've encountered some of the greatest hits of data encoding in this post: delimited, hierarchical and structured, and seen a few different realizations of each. If you're feeling a bit overwhelmed, here's a handy flowchart that I hope will get most people there, most of the time:
 
-![bingo!](/img/data-formats.png)
+![data](/img/data-formats.png)
 
 Regardless of which of these formats (or others!) you settle on, listen to Shakespeare:
 
