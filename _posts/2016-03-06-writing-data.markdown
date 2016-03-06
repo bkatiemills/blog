@@ -2,7 +2,7 @@
 layout: post
 title: "Writing Data"
 subtitle: "an introduction to choosing & using data formats"
-date: 2077-10-22
+date: 2016-03-06
 permalink: writing-data
 ---
 
@@ -349,20 +349,4 @@ Regardless of which of these formats (or others!) you settle on, listen to Shake
 
 Strictly, uncompromisingly, *no exceptions ever*, respect the orthodoxy of your data format - this is at least as important as any choice you make when writing data.
 
-
-
-
-
-
-
-
-
-
- - options:
-  - csv (wide or tall): repeated observations of many subjects
-  - json, xml: simple hierarchical, web ready
-  - netCDF, HDF5: high performance hierarchical
-  - byte-stanza: flexible, semi-legible, medium efficiency
-  - bit packing: flexible, self-describing
- - decision flow chart
- - last word: respect format orthodoxy
+*But Bill! You forgot about this totally important other data archetype!* Tell me about how you like to encode your data in [the comments]().
