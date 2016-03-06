@@ -27,7 +27,7 @@ C32998861501009969002291971 216442238255351461562-127722120 1110101511 102351411
 
 Just like this snapshot might fail to capture the moment for your friends back home, the way we record data is *vital* for successfully using and sharing that data later. But like many skills in the brave new digitally literate world of modern research, most of us have had exactly zero training in writing data, so we wing it and hope for the best. [Jenny Bryan](https://twitter.com/jennybryan) and [Dean Attali](http://deanattali.com/) recently captured some of the more popular catastrophes this produces in their recent [bad data bingo card generator](http://daattali.com/shiny/bingo/):
 
-![bingo!](/img/bingo.png)
+![bingo!]({{ site.baseurl }}/img/bingo.png)
 
 In this post, I'm going to walk through some regret-minimizing strategies for deciding how to record your data, and point out some pitfalls to avoid. Rather than trying to stamp-collect every data format out there, I'm going to focus on *archetypical* formats that will get the job done almost all the time. Many more specific formats are really just reimaginings of these; straying too far from this family comes at a steep price. I'm only going to consider *file formats* in this post; in many cases, we should probably be using a proper database, and in all cases, there's much ado to be had about *metadata*, but those will be covered in forthcoming posts.
 
@@ -339,7 +339,8 @@ One place a good bit packing can really deliver is in encoding data on the fly i
 
 We've encountered some of the greatest hits of data encoding in this post: delimited, hierarchical and structured, and seen a few different realizations of each. If you're feeling a bit overwhelmed, here's a handy flowchart that I hope will get most people there, most of the time:
 
-![data](/img/data-formats.png)
+![data]({{ site.baseurl }}/img/data-formats.png)
+
 
 Regardless of which of these formats (or others!) you settle on, listen to Shakespeare:
 
