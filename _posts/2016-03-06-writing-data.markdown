@@ -352,4 +352,4 @@ Regardless of which of these formats (or others!) you settle on, listen to Shake
 
 Strictly, uncompromisingly, *no exceptions ever*, respect the orthodoxy of your data format - this is at least as important as any choice you make when writing data.
 
-*But Bill! You forgot about this totally important other data archetype!* Tell me about how you like to encode your data in [the comments]().
+*But Bill! You forgot about this totally important other data archetype!* Tell me about how you like to encode your data in [the comments](https://github.com/BillMills/blog/issues/10).
