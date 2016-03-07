@@ -287,8 +287,8 @@ telling me that to get the next piece of data, I need to read the next 9 charact
      - height
      - number of residents
      - sub-stanza for each resident, where an individual resident stanza looks like:
-       - species
-       - color
+        - species
+        - color
 
 With that specification in hand, the final JSON example above becomes:
 
