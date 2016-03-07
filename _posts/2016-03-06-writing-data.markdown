@@ -281,14 +281,14 @@ telling me that to get the next piece of data, I need to read the next 9 charact
 
  - Variable size indicators are always one character long
  - Variables in order:
-  - number of trees
-  - sub-stanza for each tree, where an individual tree stanza looks like:
-    - type
-    - height
-    - number of residents
-    - sub-stanza for each resident, where an individual resident stanza looks like:
-      - species
-      - color
+   - number of trees
+   - sub-stanza for each tree, where an individual tree stanza looks like:
+     - type
+     - height
+     - number of residents
+     - sub-stanza for each resident, where an individual resident stanza looks like:
+       - species
+       - color
 
 With that specification in hand, the final JSON example above becomes:
 
